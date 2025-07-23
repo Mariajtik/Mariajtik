@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.jpg" alt="Banner Maria Baptista" width="100%" />
+</p>
+
 <h1 align="center"> 🟥 Maria Baptista</h1>
 <p align="center"><strong>Engineering Student · Full Stack & Observability Developer · Future-Ready Technologist</strong></p>
 
