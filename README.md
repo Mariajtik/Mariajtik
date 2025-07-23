@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.png" alt="Banner Maria Baptista" width="100%" />
+  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.png" alt="Banner Maria Baptista" width="70%" />
 </p>
 
-<h1 align="center"> 🟥 Maria Baptista</h1>
+<h1 align="center" style="color:#e50914;"> 🟥 Maria Baptista</h1>
 <p align="center"><strong>Engineering Student · Full Stack & Observability Developer · Future-Ready Technologist</strong></p>
 
 ---
