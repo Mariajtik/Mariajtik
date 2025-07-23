@@ -24,7 +24,7 @@
 💻 Languages & Frameworks:
 - JavaScript, React, Node.js
 - PHP, Java, HTML5, CSS3
-- Python, Solidity
+- Python, Tailwind, Solidity
 - MySQL, Supabase, Firebase
 - PostgreSQL, MongoBD, Angular
 
