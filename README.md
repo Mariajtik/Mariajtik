@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.png" alt="Banner Maria Baptista" width="70%" />
+  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.gif" alt="Banner Maria Baptista" width="70%" />
 </p>
 
 <h1 align="center"><em>Maria Baptista</h1>
