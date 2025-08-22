@@ -22,6 +22,7 @@
 
 ```yaml
 💻 Languages & Frameworks:
+- Elixir, Phoenix
 - JavaScript, React, Node.js
 - PHP, Java, HTML5, CSS3
 - Python, Tailwind, Solidity
@@ -39,6 +40,7 @@
 🛠️ Tools & DevOps:
 - Git, GitHub, GitHub Actions
 - RESTful APIs, Postman, Webpack
+- Docker, Kubernetes, AWS
 ````
 
 
