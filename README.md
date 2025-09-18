@@ -64,10 +64,10 @@
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mariajtik&show_icons=true&theme=radical&title_color=red&icon_color=white&text_color=white&bg_color=0d1117" width="47%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Mariajtik&show_icons=true&theme=radical&title_color=red&icon_color=white&text_color=white&bg_color=0d1117&cache_seconds=1800" width="47%" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mariajtik&theme=radical&ring=green&currStreakLabel=white&fire=red" width="47%" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&theme=radical&title_color=red&text_color=white&bg_color=0d1117" width="60%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&theme=radical&title_color=red&text_color=white&bg_color=0d1117&cache_seconds=1800" width="60%" />
 </div>
 
 ---
