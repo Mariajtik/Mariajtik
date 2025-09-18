@@ -26,8 +26,8 @@
 - JavaScript, React, Node.js
 - PHP, Java, HTML5, CSS3
 - Python, Tailwind, Solidity
-- MySQL, Supabase, Firebase
-- PostgreSQL, MongoBD, Angular
+- MySQL, PostgreSQL, MongoBD
+- Angular, C#, .Net, WebApi, TDD
 
 📊 Observability & Monitoring:
 - Prometheus, Grafana, OpenTelemetry
@@ -53,11 +53,11 @@
 | 🟢 **EthPool Simulator**        | ✅ Published | Ethereum staking pool simulation engine, focused on decentralized logic and financial modeling |
 | 🔴 **Kuze Alert**               | In Progress | Custom alerting system with Prometheus, Grafana and distributed monitoring practices           |
 | 🔴 **Task Manager**             | In Progress | Task management web app with authentication and real-time database (Firebase)                  |
-| 🟥 **School Management System** | Finalizing  | Web system for school administration with PHP, MySQL, JS, HTML, CSS                            |
-| ⚫ **Java Store System**         | Finalizing  | Desktop-based store/inventory system using Java and GUI libraries                              |
+|  🟢 **School Management System** | ✅ Published | Web system for school administration                            |
+| ⚫ **See More, Checkout My Profile**         | Ready ✅  |                                 |
 | ⚪ **Mini Personal Projects**    | Prototypes  | Exploratory CRUD, API, and UI tests using full stack tech                                      |
 
-> 🧪 These projects are not published yet, but follow modern coding, versioning, and documentation standards.
+> 🧪 The mini personal projects are not published, but follow modern coding, versioning, and documentation standards.
 
 ---
 
