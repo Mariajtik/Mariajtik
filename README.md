@@ -70,13 +70,9 @@
   
   <!-- STREAK STATS (URL CORRIGIDO) -->
   <img src="https://streak-stats.demolab.com/?user=Mariajtik&theme=radical&ring=green&currStreakLabel=white&fire=red" width="47%" />
-  
-  <br><br>
-  
+
   <!-- LINGUAGENS MAIS USADAS -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&theme=radical&title_color=red&text_color=white&bg_color=0d1117&cache_seconds=1800" width="60%" />
-
-  <br><br>
 
   <!-- NOVO CONTADOR DE VISUALIZAÇÕES -->
   ![Contador de Visualizações do Perfil](https://komarev.com/ghpvc/?username=mariajtik&label=Profile%20views&color=4682B4&label_color=FFFFFF&style=flat&count_color=808080)
