@@ -23,6 +23,7 @@
 ```yaml
 💻 Languages & Frameworks:
 - Elixir, Phoenix
+- Dart, Flutter
 - JavaScript, React, Node.js
 - PHP, Java, HTML5, CSS3
 - Python, Tailwind, Solidity
