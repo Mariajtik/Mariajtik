@@ -24,8 +24,8 @@
 💻 Languages & Frameworks:
 - Elixir, Phoenix
 - Dart, Flutter
-- JavaScript, React, Node.js
-- PHP, Java, HTML5, CSS3
+- JavaScript, ReactJs, React Native
+- PHP, Java, HTML5, CSS3, Node.js
 - Python, Tailwind, Solidity
 - MySQL, PostgreSQL, MongoBD
 - Angular, C#, .Net, WebApi, TDD
