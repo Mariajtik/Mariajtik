@@ -28,7 +28,8 @@
 - PHP, Java, HTML5, CSS3, Node.js
 - Python, Tailwind, Solidity
 - MySQL, PostgreSQL, MongoBD
-- Angular, C#, .Net, WebApi, TDD
+- Angular, C#, .NET core, WebApi, TDD
+- Jest, xUnit
 
 📊 Observability & Monitoring:
 - Prometheus, Grafana, OpenTelemetry
