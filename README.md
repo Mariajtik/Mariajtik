@@ -3,7 +3,9 @@
 </p>
 
 <h1 align="center"><em>Maria Baptista</h1>
-<p align="center"><strong>Engineering Student · Full Stack & Observability Developer · Future-Ready Technologist</strong></em></p>
+<p align="center"><strong>
+  Full‑Stack & Observability Engineer · Sanctions & CTF Investigator · Engineering Student · Future‑Ready Technologist
+</strong></em></p>
 
 ---
 
