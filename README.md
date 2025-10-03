@@ -46,6 +46,18 @@
 - Git, GitHub, GitHub Actions
 - RESTful APIs, Postman, Webpack
 - Docker, Kubernetes, AWS
+
+🕵️‍♂️ Blockchain Intelligence & Compliance  
+- Chainalysis, TRM Labs, Elliptic  
+- KYT (Know Your Transaction) systems  
+- Sanctions Screening (World-Check, Dow Jones Risk & Compliance)  
+- AML/CTF frameworks, Rule tuning, Alert optimization  
+- Transaction Monitoring (TM), UAT testing
+
+📈 Data & Investigation Tools  
+- SQL, Python (Pandas, NumPy)  
+- Power BI, Tableau, Excel  
+- Notion
 ````
 
 
