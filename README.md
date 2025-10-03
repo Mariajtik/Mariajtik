@@ -93,8 +93,8 @@
   <img src="https://img.shields.io/badge/AI%20tools-OpenAI%20%7C%20HuggingFace%20%7C%20GCP-white?style=for-the-badge&logo=openai&logoColor=black" />
   <img src="https://img.shields.io/badge/student-in%20tech-black?style=for-the-badge&logo=googleclassroom&logoColor=white" />
   
-[![Sanctions & CTF Investigator — On-chain Tracing & Automation](https://img.shields.io/badge/Sanctions%20%26%20CTF%20Investigator%20%E2%80%94%20On--chain%20Tracing%20%26%20Automation-lightgrey?style=flat-square&logo=github&logoColor=black)](#)
-  
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/120px-Magnifying_glass_icon.svg.png" width="20"/> [![Sanctions & CTF Investigator](https://img.shields.io/badge/On--chain%20Tracing%20%26%20Automation-blue?style=for-the-badge)](#)
+
 </p>
 
 ---
