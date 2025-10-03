@@ -11,10 +11,9 @@
 
 ### 🧠 About Me
 
-🎓 Final-year technical high school student in **Network and Information Systems Management**  
-🏫 Studying at *Instituto Politécnico Privado Lucrécio dos Santos*  
 🧩 Passionate about building **reliable, scalable systems**, even in offline or constrained environments  
 ⚙️ Focused on **Full Stack Development** and **Observability Engineering** with a long-term view on system resilience
+🔎 **Sanctions & CTF Investigator**: I investigate on‑chain flows, gather intelligence, and contribute to detections and automations that help reduce manual work.
 
 > “Solid systems don’t need exposure — they need purpose. I build with purpose.”
 
