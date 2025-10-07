@@ -126,7 +126,7 @@
   <a href="https://dev.to/mariakcbaptista" target="_blank">
     <img src="https://img.shields.io/badge/Dev.to-@mariakcbaptista-darkgreen?style=for-the-badge&logo=dev.to&logoColor=white" />
   </a>
-  <a href="https://discord.gg/thequeenghost" target="_blank">
+  <a href="https://discordapp.com/users/132857536267414176" target="_blank">
 <img src="https://img.shields.io/badge/Discord-thequeenghost-darkblue?style=for-the-badge&logo=discord&logoColor=white" /> 
 </a>
 </p>
