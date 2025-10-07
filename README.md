@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.gif" alt="Banner Maria Baptista" width="70%" />
+  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.gif" alt="Banner Maria Baptista" width="100%" />
 </p>
 
 <h1 align="center"><em>Maria Baptista</h1>
@@ -126,8 +126,9 @@
   <a href="https://dev.to/mariakcbaptista" target="_blank">
     <img src="https://img.shields.io/badge/Dev.to-@mariakcbaptista-green?style=for-the-badge&logo=dev.to&logoColor=white" />
   </a>
+  <a href="https://discord/thequeenghost" target="_blank">
 <img src="https://img.shields.io/badge/Discord-thequeenghost-purple?style=for-the-badge&logo=discord&logoColor=white" /> 
-  
+</a>
 </p>
 
 ---
