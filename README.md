@@ -4,7 +4,7 @@
 
 <h1 align="center"><em>Maria Baptista</h1>
 <p align="center"><strong>
-  Full‑Stack & Observability Engineer · Sanctions & CTF Investigator · Engineering Student · Future‑Ready Technologist
+  Full‑Stack & Observability Engineer · Game Dev · Engineering Student · Future‑Ready Technologist
 </strong></em></p>
 
 ---
@@ -14,8 +14,6 @@
 🧩 Passionate about building **reliable, scalable systems**, even in offline or constrained environments
 
 ⚙️ Focused on **Full Stack Development** and **Observability Engineering** with a long-term view on system resilience
-
-🔎 **Sanctions & CTF Investigator**: I investigate on‑chain flows, gather intelligence, and contribute to detections and automations that help reduce manual work.
 
 > “Solid systems don’t need exposure — they need purpose. I build with purpose.”
 
@@ -47,13 +45,6 @@
 - RESTful APIs, Postman, Webpack
 - Docker, Kubernetes, AWS
 
-🕵️‍♂️ Blockchain Intelligence & Compliance  
-- Chainalysis, TRM Labs, Elliptic  
-- KYT (Know Your Transaction) systems  
-- Sanctions Screening (World-Check, Dow Jones Risk & Compliance)  
-- AML/CTF frameworks, Rule tuning, Alert optimization  
-- Transaction Monitoring (TM), UAT testing
-
 📈 Data & Investigation Tools  
 - SQL, Python (Pandas, NumPy)  
 - Power BI, Tableau, Excel  
@@ -69,7 +60,7 @@
 | ------------------------------- | ----------- | ---------------------------------------------------------------------------------------------- |
 | 🟢 **EthPool Simulator**        | ✅ Published | Ethereum staking pool simulation engine, focused on decentralized logic and financial modeling |
 | 🔴 **Kuze Alert**               | In Progress | Custom alerting system with Prometheus, Grafana and distributed monitoring practices           |
-| 🔴 **Task Manager**             | In Progress | Task management web app with authentication and real-time database (Firebase)                  |
+| 🔵 **Task Manager**             | In Progress | Task management web app with authentication and real-time database (Firebase)                  |
 |  🟢 **School Management System** | ✅ Published | Web system for school administration                            |
 | ⚫ **See More, Checkout My Profile**         | Ready ✅  |                                 |
 | ⚪ **Mini Personal Projects**    | Prototypes  | Exploratory CRUD, API, and UI tests using full stack tech                                      |
@@ -134,5 +125,7 @@
 ---
 
 <p align="center"><strong>“I design for stability, code for clarity, and monitor for resilience — always ready for the next challenge.”</strong></p>
+
+*<h5> Did you like what you see? Do you want support me? Please follow me and give your 🌟 ! </h5>*
 
 ---
