@@ -4,7 +4,7 @@
 
 <h1 align="center"><em>Maria Baptista</h1>
 <p align="center"><strong>
-  Full‑Stack & Observability Engineer · Game Dev · Engineering Student · Future‑Ready Technologist
+  Full‑Stack & Blockchain Enthusiastic · Game Dev · Engineering Student · Future‑Ready Technologist
 </strong></em></p>
 
 ---
