@@ -90,13 +90,11 @@
 ### 🏷️ Badges
 
 <p align="center">
-  <img src="https://img.shields.io/badge/observability-focused-black?style=for-the-badge&logo=prometheus&logoColor=white" />
-  <img src="https://img.shields.io/badge/full--stack-developer-red?style=for-the-badge&logo=javascript&logoColor=white" />
   <img src="https://img.shields.io/badge/open--source-enthusiast-darkgreen?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/AI%20tools-OpenAI%20%7C%20HuggingFace%20%7C%20GCP-white?style=for-the-badge&logo=openai&logoColor=black" />
   <img src="https://img.shields.io/badge/student-in%20tech-black?style=for-the-badge&logo=googleclassroom&logoColor=white" />    
   
-[![Sanctions & CTF Investigator — On-chain Tracing & Automation](https://img.shields.io/badge/Sanctions%20%26%20CTF%20Investigator%20%E2%80%94%20On--chain%20Tracing%20%26%20Automation-white?style=for-the-badge&logo=search&logoColor=black)](#)
+
 
 </p>
 
@@ -120,10 +118,10 @@
   <a href="https://discordapp.com/users/132857536267414176" target="_blank">
 <img src="https://img.shields.io/badge/Discord-thequeenghost-darkblue?style=for-the-badge&logo=discord&logoColor=white" /> 
 </a>
-<a href="https://www.instagram.com/mariakcbaptista06" 
-  target="_blank">
-<img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=darkblue" />
 
+  
+  <a href="https://www.instagram.com/mariakcbaptista06" target="_blank">
+<img src="https://img.shields.io/badge/Instagram-mariakcbaptista06-darkblue?style=for-the-badge&logo=instagram&logoColor=white" />
 </a>
 
   
@@ -133,6 +131,10 @@
 
 <p align="center"><strong>“I design for stability, code for clarity, and monitor for resilience — always ready for the next challenge.”</strong></p>
 
-*<h5> Did you like what you see? Do you want support me? Please follow me and give your 🌟 ! </h5>*
+---
+
+### Obs:
+
+*<h5> Did you like what you see? Do you want support me? Please follow me and give me your 🌟 ! </h5>*
 
 ---
