@@ -4,7 +4,7 @@
 
 <h1 align="center"><em>Maria Baptista</h1>
 <p align="center"><strong>
-  Full‑Stack & Blockchain Enthusiastic · Game Dev · Engineering Student · Future‑Ready Technologist
+  Full‑Stack & Game Developer · Blockchain Enthusiastic · Engineering Student · Future‑Ready Technologist
 </strong></em></p>
 
 ---
@@ -120,6 +120,13 @@
   <a href="https://discordapp.com/users/132857536267414176" target="_blank">
 <img src="https://img.shields.io/badge/Discord-thequeenghost-darkblue?style=for-the-badge&logo=discord&logoColor=white" /> 
 </a>
+<a href="https://www.instagram.com/mariakcbaptista06" 
+  target="_blank">
+<img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=darkblue" />
+
+</a>
+
+  
 </p>
 
 ---
