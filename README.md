@@ -9,12 +9,83 @@
 
 ---
 
-### 🧠 About Me
+<!-- Animated Gradient Header -->
+<img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/wave.gif" width="100%"/>
 
-🧩 Passionate about building **reliable, scalable systems**, even in offline or constrained environments
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGU0eXFtd3N5a3J6b3Nsd2VwN2Fpc2Q2d2g0eGNzZ2w0d2lqZzNqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ln7z2eWriiQMVVp5I2/giphy.gif" width="80px" />
+<h2 align="center">🧠 About Me
+  </h2>
+</div>
 
-⚙️ Focused on **Full Stack Development** and **Observability Engineering** with a long-term view on system resilience
+<p align="center">
+  I see technology not as a set of separate fields, but as an interconnected universe of possibilities.<br>
+  My journey weaves through three core domains, all driven by a single mission:<br>
+  <strong>to build impactful, decentralized digital experiences.</strong>
+</p>
 
+<!-- Animated Divider -->
+<img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/giphy.gif" width="100%"/>
+
+<br>
+
+<!-- Interactive Sections with Animated Icons -->
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+      <details>
+        <summary>
+          <div align="center">
+            <img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/web.gif" width="50px" /><br>
+            <strong>Full-Stack Development</strong><br>
+            <small>The Foundation</small>
+          </div>
+        </summary>
+        <br>
+        <p>This is my bedrock. I architect and build complete applications, from the server-side logic to the pixel-perfect user interface. It's about turning a vision into a robust, functional, and scalable product.</p>
+      </details>
+    </td>
+    <td width="33%" valign="top">
+      <details>
+        <summary>
+          <div align="center">
+            <img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/gaming.gif" width="50px" /><br>
+            <strong>Game Development</strong><br>
+            <small>The Art of Engagement</small>
+          </div>
+        </summary>
+        <br>
+        <p>This is where I explore the science of interaction. Building games has taught me how to craft immersive experiences and push performance to its absolute limits—lessons I carry into every piece of software I create.</p>
+      </details>
+    </td>
+    <td width="33%" valign="top">
+      <details>
+        <summary>
+          <div align="center">
+            <img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/blockchain.gif" width="50px" /><br>
+            <strong>Blockchain</strong><br>
+            <small>The Blueprint for the Future</small>
+          </div>
+        </summary>
+        <br>
+        <p>This is my north star. I believe in the power of decentralization to create systems that are more transparent, secure, and user-centric. My focus isn't just on the tech; it's on architecting the next generation of the web, where users are back in control.</p>
+      </details>
+    </td>
+  </tr>
+</table>
+
+<!-- Animated Divider -->
+<img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/giphy.gif" width="100%"/>
+
+<br>
+
+<div align="center">
+  <blockquote>
+    "Together, these pillars allow me to do more than just build apps—they empower me to design <strong>complete, interactive, and future-proof digital ecosystems.</strong>"
+  </blockquote>
+</div>
+<!-- Animated Gradient Footer -->
+<img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/wave.gif" width="100%"/>
 > “Solid systems don’t need exposure — they need purpose. I build with purpose.”
 
 ---
