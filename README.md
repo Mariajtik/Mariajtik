@@ -90,6 +90,11 @@
 ### 🏷️ Badges
 
 <p align="center">
+
+<img src="https://img.shields.io/badge/Blockchain_Focused-black?style=for-the-badge&logo=ethereum&logoColor=white" />
+<img src="https://img.shields.io/badge/Full--Stack_Developer-red?style=for-the-badge&logo=javascript&logoColor=white" />
+<img src="https://img.shields.io/badge/Game_Developer-white?style=for-the-badge&logo=unity&logoColor=black" />
+  
   <img src="https://img.shields.io/badge/open--source-enthusiast-darkgreen?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/AI%20tools-OpenAI%20%7C%20HuggingFace%20%7C%20GCP-white?style=for-the-badge&logo=openai&logoColor=black" />
   <img src="https://img.shields.io/badge/student-in%20tech-black?style=for-the-badge&logo=googleclassroom&logoColor=white" />    
@@ -133,8 +138,7 @@
 
 ---
 
-### Obs:
 
-*<h5> Did you like what you see? Do you want support me? Please follow me and give me your 🌟 ! </h5>*
+### *<h6> Did you like what you see? Do you want support me? Please follow me and give me your 🌟 ! </h6>*
 
 ---
