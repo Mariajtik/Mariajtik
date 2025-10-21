@@ -13,7 +13,9 @@
 <img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/wave.gif" width="100%"/>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGU0eXFtd3N5a3J6b3Nsd2VwN2Fpc2Q2d2g0eGNzZ2w0d2lqZzNqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ln7z2eWriiQMVVp5I2/giphy.gif" width="80px" />
+
+  
+  <img src="https://pin.it/4i553inSu" width="100%" />
 <h2 align="center">🧠 About Me
   </h2>
 </div>
