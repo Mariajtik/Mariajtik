@@ -86,6 +86,7 @@
 </div>
 <!-- Animated Gradient Footer -->
 <img src="https://raw.githubusercontent.com/MAJigsaw/MAJigsaw/main/wave.gif" width="100%"/>
+
 > “Solid systems don’t need exposure — they need purpose. I build with purpose.”
 
 ---
