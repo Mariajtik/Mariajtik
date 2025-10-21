@@ -15,7 +15,7 @@
 <div align="center">
 
   
-  <img src="https://pin.it/4i553inSu" width="100%" />
+  <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/8ec6f1630c1f40394878290b96c74e6f.gif" width="100%" />
 <h2 align="center">🧠 About Me
   </h2>
 </div>
