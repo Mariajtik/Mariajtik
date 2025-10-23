@@ -3,6 +3,7 @@
 </p>
 
 <h1 align="center"><em> M A R I A  <br></br> B A P T I S T A </h1>
+
 <p align="center"><strong>
   Full‑Stack & Game Developer · Blockchain Enthusiastic · Engineering Student · Future‑Ready Technologist
 </strong></em></p>
@@ -60,7 +61,7 @@
         <p>This is where I explore the science of interaction. Building games has taught me how to craft immersive experiences and push performance to its absolute limits—lessons I carry into every piece of software I create.</p>
       </details>
     </td>
-    <td width="33%" valign="top">
+    <td width="33%" align="top">
       <details>
         <summary>
           <div align="center">
