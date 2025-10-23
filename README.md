@@ -144,7 +144,8 @@
 
 ---
 
-<img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/yupy.gif" alt="Banner Maria Baptista" width="100%" />
+<img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/YUPY.gif" alt="YUPY gif" width="80%" />
+
 
 ### 📊 GitHub Stats
 
