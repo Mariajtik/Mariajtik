@@ -144,7 +144,7 @@
 
 ---
 
-<img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/YUPY.gif" alt="YUPY gif" width="80%" />
+<img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/YUPY.gif" alt="YUPY gif" width="100%" />
 
 
 ### 📊 GitHub Stats
