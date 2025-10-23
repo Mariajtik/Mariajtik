@@ -32,7 +32,7 @@
 <br>
 
 <!-- Interactive Sections with Animated Icons -->
-<table width="100%">
+<table width="100%"; align="center">
   <tr>
     <td width="33%" valign="top">
       <details>
