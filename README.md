@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/banner-coding.gif" alt="Banner Maria Baptista" width="100%" />
 </p>
 
-<h1 align="center"><em>Maria Baptista</h1>
+<h1 align="center"><em> M A R I A  <br></br> B A P T I S T A </h1>
 <p align="center"><strong>
   Full‑Stack & Game Developer · Blockchain Enthusiastic · Engineering Student · Future‑Ready Technologist
 </strong></em></p>
