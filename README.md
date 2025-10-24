@@ -161,7 +161,6 @@
   <!-- NOVO CONTADOR DE VISUALIZAÇÕES -->
   ![Contador de Visualizações do Perfil](https://komarev.com/ghpvc/?username=mariajtik&label=Profile%20views&color=4682B4&label_color=FFFFFF&style=flat&count_color=808080)
 
-![Snake animation](https://github.com/Mariajtik/Mariajtik/blob/output/github-contribution-grid-snake.svg)
   
 </div>
   
@@ -220,6 +219,10 @@
 ---
 
 
-### *<h6> Did you like what you see? Do you want support me? Please follow me and give me your 🌟 ! </h6>*
+ <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/LA.gif" alt="Banner Maria Baptista" width="50%" height="50%" />
 
+### * <p align="center"> <h6> Did you like what you see? Do you want support me? Please follow me and give me your 🌟 ! </h6>*
+
+ </p>
+ 
 ---
