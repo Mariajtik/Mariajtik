@@ -218,10 +218,12 @@
 
 ---
 
+<p align="center">
 
- <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/LA.gif" alt="Banner Maria Baptista" width="50%" height="50%" />
 
-### * <p align="center"> <h6> Did you like what you see? Do you want support me? Please follow me and give me your 🌟 ! </h6>*
+ <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/main/media/LA.gif" alt="Banner Maria Baptista" width="100%" height="50%" />
+
+### <h6> Did you like what you see? Do you want support me? Please follow me and give me your 🌟 ! </h6>
 
  </p>
  
