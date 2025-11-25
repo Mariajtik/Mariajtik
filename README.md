@@ -162,6 +162,7 @@
 
 
 
+
   <!-- NOVO CONTADOR DE VISUALIZAÇÕES -->
   ![Contador de Visualizações do Perfil](https://komarev.com/ghpvc/?username=mariajtik&label=Profile%20views&color=4682B4&label_color=FFFFFF&style=flat&count_color=808080)
 
