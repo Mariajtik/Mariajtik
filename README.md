@@ -158,7 +158,8 @@
 
 
   <!-- LINGUAGENS MAIS USADAS -->
-![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&theme=radical)
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=Mariajtik&layout=compact&theme=radical&bg_color=0d1117&title_color=red&text_color=white" width="60%" />
+
 
 
   <!-- NOVO CONTADOR DE VISUALIZAÇÕES -->
