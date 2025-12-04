@@ -134,8 +134,8 @@
 | Project                         | Status      | Description                                                                                    |
 | ------------------------------- | ----------- | ---------------------------------------------------------------------------------------------- |
 | 🟢 **EthPool Simulator**        | ✅ Published | Ethereum staking pool simulation engine, focused on decentralized logic and financial modeling |
-| 🔴 **Kuze Alert**               | In Progress | Custom alerting system with Prometheus, Grafana and distributed monitoring practices           |
-| 🔵 **Task Manager**             | In Progress | Task management web app with authentication and real-time database (Firebase)                  |
+| 🔴 **Kuze Alert**               |  Stopped | Custom alerting system with Prometheus, Grafana and distributed monitoring practices           |
+|  🟢 **Task Manager**             | ✅ Published | Task management web app with authentication and real-time database (Firebase)                  |
 |  🟢 **School Management System** | ✅ Published | Web system for school administration                            |
 | ⚫ **See More, Checkout My Profile**         | Ready ✅  |                                 |
 | ⚪ **Mini Personal Projects**    | Prototypes  | Exploratory CRUD, API, and UI tests using full stack tech                                      |
