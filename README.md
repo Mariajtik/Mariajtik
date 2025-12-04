@@ -151,14 +151,13 @@
 
 <div align="center">
   <!-- STATS GERAIS -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Mariajtik&show_icons=true&theme=radical&title_color=red&icon_color=white&text_color=white&bg_color=0d1117&cache_seconds=1800" width="47%" />
-
+  
 
 ![GitHub Stats](https://github-readme-stats.zcy.dev/api?username=Mariajtik&show_icons=true&theme=radical&title_color=red&icon_color=white&text_color=white&bg_color=0d1117&cache_seconds=1800)
 
 
   <!-- LINGUAGENS MAIS USADAS -->
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=Mariajtik&layout=compact&theme=radical&bg_color=0d1117&title_color=red&text_color=white" width="60%" />
+
 
 
 
