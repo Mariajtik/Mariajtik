@@ -110,7 +110,7 @@ Collaborating with international teams and delivering software globally.
 
 <p align="center">
 
-<a href="https://www.linkedin.com/in/maria-baptista-2a90493b3">
+<a href="https://www.linkedin.com/in/maria-baptista-2a90493b3O157">
 <img src="https://img.shields.io/badge/LinkedIn-Maria_Baptista-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
@@ -2358,7 +2358,7 @@ src="https://img.shields.io/badge/Explore_My_Code-111827?style=for-the-badge&log
 </a>
 
 
-<a href="https://www.linkedin.com/in/maria-baptista-2a90493b3">
+<a href="https://www.linkedin.com/in/maria-baptista-2a90493b3O157">
 
 <img 
 src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
