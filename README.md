@@ -124,3 +124,154 @@ Interested in CRM, customer experience, business processes and Salesforce.
 <br>
 
 <!-- End Hero -->
+
+<!-- ================= PREMIUM ABOUT ME ================= -->
+
+<p align="center">
+  <img
+    src="media/loadcat.gif"
+    width="100%"
+  />
+</p>
+
+<h2 align="center">
+  🧠 About Me
+</h2>
+
+<p align="center">
+  <strong>
+    I build digital solutions at the intersection of software engineering,
+    artificial intelligence, automation and business.
+  </strong>
+</p>
+
+<br>
+
+<table width="100%">
+<tr>
+
+<td width="58%" valign="top">
+
+<h3>⚡ Engineering with Purpose</h3>
+
+<p>
+I am a Full Stack Developer with hands-on experience building and improving
+web solutions, integrating external services and translating business needs
+into practical digital products.
+</p>
+
+<p>
+My work spans <strong>frontend, backend, APIs, automation, UI/UX and
+AI-assisted development</strong> — allowing me to approach problems from
+both the technical and product perspective.
+</p>
+
+<p>
+I enjoy understanding <strong>why</strong> something needs to be built,
+designing the right solution, and turning that idea into something people
+can actually use.
+</p>
+
+</td>
+
+<td width="42%" valign="top">
+
+<h3>🎯 What I Bring</h3>
+
+<ul>
+  <li><strong>Full Stack Development</strong></li>
+  <li><strong>AI-assisted development</strong></li>
+  <li><strong>Workflow automation</strong></li>
+  <li><strong>API & service integrations</strong></li>
+  <li><strong>UI/UX thinking</strong></li>
+  <li><strong>Customer-oriented problem solving</strong></li>
+  <li><strong>Business & process awareness</strong></li>
+</ul>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+<table width="100%">
+<tr>
+
+<td width="33%" align="center">
+
+<h3>🤖 AI</h3>
+
+<p>
+AI is part of my development workflow — from exploration and prototyping
+to implementation and refinement.
+</p>
+
+</td>
+
+<td width="33%" align="center">
+
+<h3>⚙️ Automation</h3>
+
+<p>
+I use tools such as <strong>n8n</strong> to connect systems,
+automate workflows and reduce repetitive work.
+</p>
+
+</td>
+
+<td width="33%" align="center">
+
+<h3>💼 Business</h3>
+
+<p>
+My experience also includes customer support, lead generation,
+marketing and digital business processes.
+</p>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+<br>
+
+<h3 align="center">
+🌐 From Code to Customer
+</h3>
+
+<p align="center">
+I believe software engineering becomes more valuable when it is connected
+to the people and processes it is designed to serve.
+</p>
+
+<p align="center">
+That is why I am particularly interested in the space where
+<strong>technology, CRM, automation, AI and business</strong> converge.
+</p>
+
+<br>
+
+<div align="center">
+
+<blockquote>
+
+<strong>
+"I don't just want to build software that works.
+<br>
+I want to understand the problem, improve the process,
+<br>
+and build a solution that creates real value."
+</strong>
+
+</blockquote>
+
+</div>
+
+<br>
+
+<!-- ================= END PREMIUM ABOUT ME ================= -->
