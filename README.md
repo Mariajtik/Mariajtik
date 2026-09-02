@@ -734,3 +734,500 @@ into real product value.
 <br>
 
 <!-- ================= END AI + ENGINEERING WORKFLOW ================= -->
+
+<!-- ================= FEATURED PROJECTS ================= -->
+
+<br>
+
+<h2 align="center">
+  <img src="https://img.icons8.com/fluency/48/rocket.png" width="30" valign="middle"/>
+  Featured Projects
+</h2>
+
+<p align="center">
+  Selected projects demonstrating software engineering, product thinking,
+  AI-assisted development and system integration.
+</p>
+
+<br>
+
+<table width="100%">
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h3>🌍 Kwendi</h3>
+
+<strong>Umbundu Learning Platform</strong>
+
+<p>
+A language-learning platform designed around Angolan culture,
+gamification and accessible digital education.
+</p>
+
+<p>
+<strong>Focus:</strong> Product Design · Flutter · UX/UI · AI-assisted development
+</p>
+
+<p>
+<a href="https://github.com/Mariajtik">
+<img src="https://img.shields.io/badge/Explore_Project-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>📋 Task Manager</h3>
+
+<strong>Full Stack Web Application</strong>
+
+<p>
+A productivity application focused on structured task management,
+modern UI and practical full-stack development.
+</p>
+
+<p>
+<strong>Stack:</strong> React · Tailwind CSS · Vite
+</p>
+
+<p>
+<a href="https://github.com/Mariajtik/task-manager-app">
+<img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h3>🏫 School Management System</h3>
+
+<strong>Business Management Application</strong>
+
+<p>
+Application focused on structured information, business workflows,
+frontend architecture and data management.
+</p>
+
+<p>
+<strong>Stack:</strong> React · .NET · SQL
+</p>
+
+<p>
+<a href="https://github.com/Mariajtik/sistema-gestao-escolar">
+<img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>⛓ Ethereum Transaction Pool Simulator</h3>
+
+<strong>Blockchain Systems Experiment</strong>
+
+<p>
+Technical exploration of transaction flows, mempool behaviour
+and decentralized-system concepts.
+</p>
+
+<p>
+<strong>Stack:</strong> JavaScript · Ethereum concepts
+</p>
+
+<p>
+<a href="https://github.com/Mariajtik/ethpool-simulator-">
+<img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<p align="center">
+<a href="https://github.com/Mariajtik">
+<img src="https://img.shields.io/badge/Explore_All_Repositories-2563EB?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+</p>
+
+<!-- ================= END PROJECTS ================= -->
+
+<!-- ================= SALESFORCE ================= -->
+
+<br>
+
+<hr>
+
+<br>
+
+<h2 align="center">
+  <img src="https://img.icons8.com/fluency/48/salesforce.png" width="30" valign="middle"/>
+  Salesforce & CRM
+</h2>
+
+<p align="center">
+  <strong>
+    Technology × Business × Customer Experience
+  </strong>
+</p>
+
+<br>
+
+<p align="center">
+  My interest in Salesforce comes from the intersection between
+  <strong>technology, business processes and customer relationships.</strong>
+</p>
+
+<p align="center">
+  My previous experience with lead generation, customer support,
+  digital workflows, automation and software development gives me
+  a practical foundation for learning the Salesforce ecosystem.
+</p>
+
+<br>
+
+<table width="100%">
+<tr>
+
+<td width="33%" align="center">
+
+<img src="https://img.icons8.com/fluency/48/customer-insight.png" width="40"/>
+
+<h3>CRM</h3>
+
+<p>
+Accounts<br>
+Contacts<br>
+Leads<br>
+Opportunities
+</p>
+
+</td>
+
+<td width="33%" align="center">
+
+<img src="https://img.icons8.com/fluency/48/workflow.png" width="40"/>
+
+<h3>Automation</h3>
+
+<p>
+Flows<br>
+Business Processes<br>
+Data Workflows
+</p>
+
+</td>
+
+<td width="33%" align="center">
+
+<img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" width="40"/>
+
+<h3>AI</h3>
+
+<p>
+AI-assisted workflows<br>
+Automation<br>
+AI × CRM
+</p>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Salesforce-Learning_Path-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/CRM-Business_Focused-2563EB?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/AI_×_Automation-7C3AED?style=for-the-badge"/>
+
+</p>
+
+<br>
+
+<p align="center">
+<strong>
+Interested in growing into Salesforce consulting through hands-on projects,
+senior mentorship and continuous certification.
+</strong>
+</p>
+
+<!-- ================= END SALESFORCE ================= -->
+
+<!-- ================= CURRENT FOCUS ================= -->
+
+<br>
+
+<h2 align="center">
+  <img src="https://img.icons8.com/fluency/48/goal.png" width="30" valign="middle"/>
+  Current Focus
+</h2>
+
+<p align="center">
+  <strong>
+    Software Engineering × AI × CRM × Automation
+  </strong>
+</p>
+
+<br>
+
+<table width="100%">
+<tr>
+
+<td width="50%" valign="top">
+
+<h3 align="center">🤖 AI & Automation</h3>
+
+<p align="center">
+AI-assisted development · n8n · APIs · Agentic workflows
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3 align="center">☁️ Salesforce</h3>
+
+<p align="center">
+CRM concepts · Flows · Data models · Sales & Service Cloud
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<h3 align="center">⚙️ Full Stack</h3>
+
+<p align="center">
+React · Node.js · JavaScript · APIs · Databases
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3 align="center">🌍 Global Collaboration</h3>
+
+<p align="center">
+Remote teams · English · Product-oriented development
+</p>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<hr>
+
+<br>
+
+<h2 align="center">
+  Experience Snapshot
+</h2>
+
+<p align="center">
+  <strong>Practical experience across technology, products and customer-facing environments.</strong>
+</p>
+
+<br>
+
+<div align="center">
+
+<table width="90%">
+
+<tr>
+
+<td width="30%" align="center">
+
+<h3>CLYRA</h3>
+
+<small>2026</small>
+
+<p>
+Full Stack Development<br>
+AI-assisted workflows<br>
+Automation<br>
+Customer Support
+</p>
+
+</td>
+
+<td width="5%" align="center">
+<strong>→</strong>
+</td>
+
+<td width="30%" align="center">
+
+<h3>AgedDoms</h3>
+
+<small>3+ years</small>
+
+<p>
+Web Development<br>
+Full Stack Technologies<br>
+International Projects
+</p>
+
+</td>
+
+<td width="5%" align="center">
+<strong>→</strong>
+</td>
+
+<td width="30%" align="center">
+
+<h3>Business</h3>
+
+<small>Finance & Marketing</small>
+
+<p>
+Lead Generation<br>
+WhatsApp<br>
+Customer Communication
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<!-- ================= END CURRENT FOCUS ================= -->
+
+<!-- ================= GITHUB ANALYTICS ================= -->
+
+<br>
+
+<h2 align="center">
+  <img src="https://img.icons8.com/fluency/48/combo-chart.png" width="30" valign="middle"/>
+  GitHub Analytics
+</h2>
+
+<p align="center">
+  Building, experimenting and continuously improving.
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&langs_count=10&theme=dark&hide_border=true"
+    height="180"
+  />
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com/?user=Mariajtik&theme=github-dark-blue&hide_border=true"
+    height="180"
+  />
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Mariajtik&theme=github-dark&hide_border=true&area=true"
+    width="95%"
+  />
+</p>
+
+<br>
+
+<!-- ================= CONTACT ================= -->
+
+<h2 align="center">
+  Let's Build Something Meaningful
+</h2>
+
+<p align="center">
+  <strong>
+    Open to opportunities in software engineering, AI, automation and CRM.
+  </strong>
+</p>
+
+<br>
+
+<p align="center">
+
+<a href="mailto:mariakcbaptista06@gmail.com">
+<img
+src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"
+/>
+</a>
+
+<a href="https://www.linkedin.com/in/maria-baptista-2a90493b3O157">
+<img
+src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+/>
+</a>
+
+<a href="https://dev.to/mariakcbaptista">
+<img
+src="https://img.shields.io/badge/DEV.to-000000?style=for-the-badge&logo=dev.to&logoColor=white"
+/>
+</a>
+
+<a href="https://github.com/Mariajtik">
+<img
+src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+/>
+</a>
+
+</p>
+
+<br>
+
+<p align="center">
+
+<a href="https://mariajtik.github.io/CV/">
+<img
+src="https://img.shields.io/badge/View_My_CV-2563EB?style=for-the-badge"
+alt="View CV"
+/>
+</a>
+
+</p>
+
+<br>
+
+<p align="center">
+  <em>
+    Human curiosity · AI leverage · Engineering discipline
+  </em>
+</p>
+
+<p align="center">
+  <strong>Maria Baptista</strong>
+</p>
+
+<!-- ================= END FOOTER ================= -->
