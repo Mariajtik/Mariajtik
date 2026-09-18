@@ -1138,7 +1138,7 @@ Customer Communication
 
 <p align="center">
   <img
-    src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&langs_count=10&theme=dark&hide_border=true"
+    src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&langs_count=12&theme=dark&hide_border=true"
     height="180"
   />
 </p>
