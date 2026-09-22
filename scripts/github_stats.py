@@ -1,6 +1,3 @@
-```python
-#!/usr/bin/env python3
-
 import json
 import os
 import re
@@ -12,23 +9,23 @@ from pathlib import Path
 
 
 OWNER = "Mariajtik"
-README = "README.md"
-API = "https://api.github.com"
+README_FILE = Path("README.md")
 
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 HEADERS = {
     "Accept": "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "Mariajtik-readme-automation",
+    "User-Agent": "Mariajtik-README-Automation",
 }
 
 if TOKEN:
     HEADERS["Authorization"] = f"Bearer {TOKEN}"
 
 
-def api(path, params=None):
-    url = API + path
+def github_api(endpoint, params=None):
+
+    url = "https://api.github.com" + endpoint
 
     if params:
         url += "?" + urllib.parse.urlencode(params)
@@ -42,152 +39,51 @@ def api(path, params=None):
         return json.load(response)
 
 
-def fmt_date(value):
-    if not value:
-        return "—"
-
-    try:
-        date = datetime.fromisoformat(
-            value.replace("Z", "+00:00")
-        )
-
-        return date.strftime("%d %b %Y")
-
-    except Exception:
-        return value[:10]
-
-
-def percentage(value, total):
-    if not total:
-        return 0
-
-    return value / total * 100
-
-
-def escape_html(text):
-    return (
-        str(text)
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
-
-
-def replace_block(text, name, content):
+def replace_block(readme, name, content):
 
     start = f"<!-- AUTO:{name}:START -->"
     end = f"<!-- AUTO:{name}:END -->"
 
     pattern = re.compile(
-        re.escape(start) +
-        r".*?" +
-        re.escape(end),
-        re.S
+        re.escape(start) + r".*?" + re.escape(end),
+        re.DOTALL
     )
 
     replacement = (
-        f"{start}\n"
-        f"{content}\n"
-        f"{end}"
+        start
+        + "\n"
+        + content
+        + "\n"
+        + end
     )
 
-    if pattern.search(text):
+    if pattern.search(readme):
         return pattern.sub(
             replacement,
-            text,
+            readme,
             count=1
         )
 
-    return (
-        text +
-        "\n\n" +
-        replacement +
-        "\n"
-    )
-
-
-def create_language_svg(items):
-
-    width = 900
-    row_height = 34
-    height = 80 + max(len(items), 1) * row_height
-
-    maximum = max(
-        [value for _, value in items] or [1]
-    )
-
-    svg = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" '
-        f'width="{width}" height="{height}" '
-        f'viewBox="0 0 {width} {height}">',
-
-        '<rect width="100%" height="100%" '
-        'rx="18" fill="#0d1117"/>',
-
-        '<text x="32" y="38" '
-        'fill="#f0f6fc" '
-        'font-family="Arial,sans-serif" '
-        'font-size="22" '
-        'font-weight="700">'
-        'Top Languages'
-        '</text>'
-    ]
-
-    y = 72
-
-    for language, value in items:
-
-        bar_width = int(
-            500 * (value / maximum)
-        ) if maximum else 0
-
-        svg.append(
-            f'<text x="32" y="{y + 18}" '
-            f'fill="#c9d1d9" '
-            f'font-family="Arial,sans-serif" '
-            f'font-size="14">'
-            f'{escape_html(language)}'
-            f'</text>'
-        )
-
-        svg.append(
-            f'<rect x="190" y="{y + 5}" '
-            f'width="500" height="18" '
-            f'rx="9" fill="#21262d"/>'
-        )
-
-        svg.append(
-            f'<rect x="190" y="{y + 5}" '
-            f'width="{bar_width}" height="18" '
-            f'rx="9" fill="#2563eb"/>'
-        )
-
-        svg.append(
-            f'<text x="715" y="{y + 19}" '
-            f'fill="#f0f6fc" '
-            f'font-family="Arial,sans-serif" '
-            f'font-size="14">'
-            f'{value:.2f}%'
-            f'</text>'
-        )
-
-        y += row_height
-
-    svg.append("</svg>")
-
-    return "\n".join(svg)
+    return readme + "\n\n" + replacement + "\n"
 
 
 def main():
 
-    print("Starting GitHub README automation...")
+    print("Starting README automation...")
 
-    user = api(
+    # --------------------------------------------------
+    # USER
+    # --------------------------------------------------
+
+    user = github_api(
         f"/users/{OWNER}"
     )
 
-    repositories = api(
+    # --------------------------------------------------
+    # REPOSITORIES
+    # --------------------------------------------------
+
+    repositories = github_api(
         f"/users/{OWNER}/repos",
         {
             "per_page": 100,
@@ -196,141 +92,144 @@ def main():
         }
     )
 
-    public_repositories = [
+    repositories = [
         repo
         for repo in repositories
         if not repo.get("fork")
         and not repo.get("archived")
     ]
 
-    total_stars = sum(
+    print(
+        f"Repositories found: {len(repositories)}"
+    )
+
+    # --------------------------------------------------
+    # BASIC STATS
+    # --------------------------------------------------
+
+    followers = user.get("followers", 0)
+    following = user.get("following", 0)
+    public_repos = user.get("public_repos", 0)
+
+    stars = sum(
         repo.get("stargazers_count", 0)
         for repo in repositories
     )
 
-    total_forks = sum(
+    forks = sum(
         repo.get("forks_count", 0)
         for repo in repositories
     )
 
-    print(
-        f"Found {len(repositories)} repositories."
-    )
+    stats = f"""
+<p align="center">
 
-    print(
-        f"Followers: {user.get('followers', 0)}"
-    )
+<img src="https://img.shields.io/badge/Public_Repositories-{public_repos}-2563EB?style=for-the-badge">
 
-    print(
-        f"Stars: {total_stars}"
-    )
+<img src="https://img.shields.io/badge/Followers-{followers}-7C3AED?style=for-the-badge">
 
-    print(
-        f"Forks: {total_forks}"
-    )
+<img src="https://img.shields.io/badge/Following-{following}-059669?style=for-the-badge">
 
-    languages = Counter()
+<img src="https://img.shields.io/badge/Stars-{stars}-F59E0B?style=for-the-badge">
 
-    for repository in public_repositories:
+<img src="https://img.shields.io/badge/Forks-{forks}-EA4B71?style=for-the-badge">
+
+</p>
+""".strip()
+
+    # --------------------------------------------------
+    # LANGUAGES
+    # --------------------------------------------------
+
+    language_counter = Counter()
+
+    for repo in repositories:
 
         try:
 
-            repository_languages = api(
-                f"/repos/{OWNER}/{repository['name']}/languages"
+            languages = github_api(
+                f"/repos/{OWNER}/{repo['name']}/languages"
             )
 
-            languages.update(
-                repository_languages
+            language_counter.update(
+                languages
             )
 
         except Exception as error:
 
             print(
-                f"Could not read languages for "
-                f"{repository['name']}: {error}"
+                f"Language error for {repo['name']}: {error}"
             )
 
-    total_language_bytes = sum(
-        languages.values()
+    total_bytes = sum(
+        language_counter.values()
     )
 
-    language_items = []
+    language_lines = []
 
-    for language, value in languages.most_common(10):
+    for language, amount in language_counter.most_common(10):
 
-        language_items.append(
-            (
-                language,
-                percentage(
-                    value,
-                    total_language_bytes
-                )
-            )
+        if total_bytes:
+            percentage = (
+                amount / total_bytes
+            ) * 100
+        else:
+            percentage = 0
+
+        language_lines.append(
+            f"**{language}** — {percentage:.2f}%"
         )
 
-    recent_repositories = sorted(
+    languages = "<br>".join(
+        language_lines
+    )
+
+    if not languages:
+        languages = "No language data available."
+
+    # --------------------------------------------------
+    # RECENT REPOSITORIES
+    # --------------------------------------------------
+
+    recent = sorted(
         repositories,
         key=lambda repo:
         repo.get("updated_at") or "",
         reverse=True
     )[:6]
 
-    top_repositories = sorted(
-        repositories,
-        key=lambda repo: (
-            repo.get("stargazers_count", 0),
-            repo.get("forks_count", 0)
-        ),
-        reverse=True
-    )[:6]
+    recent_rows = []
 
-    stats_html = f"""
-<p align="center">
+    for repo in recent:
 
-<img src="https://img.shields.io/badge/Public_Repos-{user.get('public_repos', 0)}-2563EB?style=for-the-badge"/>
+        name = repo["name"]
+        url = repo["html_url"]
+        language = repo.get("language") or "—"
+        repo_stars = repo.get(
+            "stargazers_count",
+            0
+        )
 
-<img src="https://img.shields.io/badge/Followers-{user.get('followers', 0)}-7C3AED?style=for-the-badge"/>
+        updated = repo.get(
+            "updated_at",
+            ""
+        )[:10]
 
-<img src="https://img.shields.io/badge/Stars-{total_stars}-F59E0B?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Forks-{total_forks}-059669?style=for-the-badge"/>
-
-</p>
-""".strip()
-
-    languages_html = "<br>".join(
-        f"**{escape_html(language)}** — {value:.2f}%"
-        for language, value in language_items
-    )
-
-    if not languages_html:
-        languages_html = "No language data available."
-
-    rows = []
-
-    for repository in recent_repositories:
-
-        rows.append(
+        recent_rows.append(
             f"""
 <tr>
 
 <td>
-<a href="{repository['html_url']}">
-<strong>{escape_html(repository['name'])}</strong>
+<a href="{url}">
+<strong>{name}</strong>
 </a>
 </td>
 
-<td>
-{escape_html(repository.get('language') or '—')}
-</td>
+<td>{language}</td>
 
-<td>
-⭐ {repository.get('stargazers_count', 0)}
-</td>
+<td>⭐ {repo_stars}</td>
 
-<td>
-{fmt_date(repository.get('updated_at'))}
-</td>
+<td>{updated}</td>
 
 </tr>
 """.strip()
@@ -346,46 +245,118 @@ def main():
 <th>Updated</th>
 </tr>
 
-""" + "\n".join(rows) + """
+""" + "\n".join(recent_rows) + """
 
 </table>
 """
 
-    top_html = "\n".join(
-        f'- [{escape_html(repo["name"])}]({repo["html_url"]}) '
-        f'— ⭐ {repo.get("stargazers_count", 0)} '
-        f'· 🍴 {repo.get("forks_count", 0)}'
-        for repo in top_repositories
+    # --------------------------------------------------
+    # TOP REPOSITORIES
+    # --------------------------------------------------
+
+    top = sorted(
+        repositories,
+        key=lambda repo: (
+            repo.get("stargazers_count", 0),
+            repo.get("forks_count", 0)
+        ),
+        reverse=True
+    )[:6]
+
+    top_lines = []
+
+    for repo in top:
+
+        top_lines.append(
+            f'- [{repo["name"]}]({repo["html_url"]}) '
+            f'— ⭐ {repo.get("stargazers_count", 0)} '
+            f'· 🍴 {repo.get("forks_count", 0)}'
+        )
+
+    top_repositories = "\n".join(
+        top_lines
     )
 
-    if not top_html:
-        top_html = "No repositories found."
+    if not top_repositories:
+        top_repositories = "No repositories found."
 
-    generated_directory = Path("generated")
+    # --------------------------------------------------
+    # LAST UPDATED
+    # --------------------------------------------------
 
-    generated_directory.mkdir(
-        parents=True,
-        exist_ok=True
+    now = datetime.now(
+        timezone.utc
+    ).strftime(
+        "%d %b %Y, %H:%M UTC"
     )
 
-    language_svg = create_language_svg(
-        language_items[:8]
-    )
+    last_updated = f"""
+<p align="center">
+<small>
+Automatically updated by Python + GitHub Actions · {now}
+</small>
+</p>
+""".strip()
 
-    Path(
-        "generated/languages.svg"
-    ).write_text(
-        language_svg,
-        encoding="utf-8"
-    )
+    # --------------------------------------------------
+    # README
+    # --------------------------------------------------
 
-    readme_path = Path(README)
-
-    readme = readme_path.read_text(
+    readme = README_FILE.read_text(
         encoding="utf-8"
     )
 
     readme = replace_block(
         readme,
-        "ST
-```
+        "STATS",
+        stats
+    )
+
+    readme = replace_block(
+        readme,
+        "LANGUAGES",
+        languages
+    )
+
+    readme = replace_block(
+        readme,
+        "RECENT_REPOSITORIES",
+        recent_html
+    )
+
+    readme = replace_block(
+        readme,
+        "TOP_REPOSITORIES",
+        top_repositories
+    )
+
+    readme = replace_block(
+        readme,
+        "LAST_UPDATED",
+        last_updated
+    )
+
+    README_FILE.write_text(
+        readme,
+        encoding="utf-8"
+    )
+
+    print(
+        "README updated successfully."
+    )
+
+    print(
+        f"Followers: {followers}"
+    )
+
+    print(
+        f"Stars: {stars}"
+    )
+
+    print(
+        f"Forks: {forks}"
+    )
+
+
+if __name__ == "__main__":
+    main()
