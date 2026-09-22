@@ -1,0 +1,1 @@
+console.log("JAVASCRIPT AUTOMATION TEST - OK");
