@@ -1,3 +1,19 @@
+<!-- AUTO:STATS:START -->
+<!-- AUTO:STATS:END -->
+
+<!-- AUTO:LANGUAGES:START -->
+<!-- AUTO:LANGUAGES:END -->
+
+<!-- AUTO:RECENT_REPOSITORIES:START -->
+<!-- AUTO:RECENT_REPOSITORIES:END -->
+
+<!-- AUTO:TOP_REPOSITORIES:START -->
+<!-- AUTO:TOP_REPOSITORIES:END -->
+
+<!-- AUTO:LAST_UPDATED:START -->
+<!-- AUTO:LAST_UPDATED:END -->
+
+
 <!-- ================= GITHUB ANALYTICS ================= -->
 
 <br>
