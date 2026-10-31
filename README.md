@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1200&color=FF5A5F&center=true&vCenter=true&width=900&height=90&lines=Welcome+to+the+Queen+Ghost+Empire;A+kingdom+of+midnight+wishes+and+shadowy+delights" alt="Welcome to the Queen Ghost Empire" />
+  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1200&color=FF5A5F&center=true&vCenter=true&width=900&height=90&lines=Welcome+to+the+Queen+Ghost+Empire;A+kingdom+of+midnight+whispers+and+haunted+delights" alt="Welcome to the Queen Ghost Empire" />
 </p>
 
 <p align="center">
@@ -30,20 +30,20 @@
 
 # Welcome to the Queen Ghost Empire
 
-The moon is high, the lanterns are glowing, and the whispers of the night have opened the gates. This is the Queen Ghost Empire, a kingdom of velvet shadows, pumpkin light, and midnight enchantment.
+The moon is high, the lanterns glow, and the night opens its velvet wings. In the Queen Ghost Empire, every shadow is a story, every candle hides a whisper, and every haunted path leads to a little bit of magic.
 
-Here, every corner is haunted with wonder, every candle holds a secret, and every spell is wrapped in a little bit of eerie elegance.
+This is the kingdom of pumpkins, moonlit silence, black roses, sweet tricks, and the beautiful thrill of October nights. Here, the air is cold, the stars are watchful, and the spirits celebrate in a quiet, charming glow.
 
 <p align="center">
-  ◝(⁰▿⁰)◜  ✧  <b>ghostly charm, candlelight, and sweet October dreams</b>  ✧  ◝(⁰▿⁰)◜
+  ◝(⁰▿⁰)◜  ✧  <b>ghostly charm, candlelight, and enchanted October dreams</b>  ✧  ◝(⁰▿⁰)◜
 </p>
 
 ## The Moonlit Royal decree
 
-The Queen of the Deadly Moon does not ask for fear — she asks for wonder.
-She rules over witchy nights, floating whispers, black roses, candy-coated shadows, and the kind of magic that turns an ordinary evening into a legendary haunting.
+The Queen does not demand fear — she demands wonder.
+She rules over witchy nights, whispering fog, glowing jack-o'-lanterns, velvet darkness, and the soft sweetness of candy in the air.
 
-She prefers velvet skies, abandoned castles, glowing jack-o'-lanterns, and the soft sound of leaves dancing under moonlight.
+She loves the hush before midnight, the rustle of autumn leaves, the sparkle of haunted lights, and the kind of magic that turns an ordinary evening into a legend.
 
 <p align="center">
   <img src="./🕸Halloween Hausdeko Ideen - So wird dein Zuhause richtig gruselig.jpeg" width="760" alt="Halloween haunted home decor" />
@@ -56,6 +56,7 @@ She prefers velvet skies, abandoned castles, glowing jack-o'-lanterns, and the s
 - 🕸 A kingdom where spooky is beautifully elegant
 - ✨ Sweet little curses and lovely October dreams
 - 🖤 Velvet darkness wrapped in enchanting joy
+- 🍬 Tricky treats, eerie laughs, and celebratory shadows
 
 <p align="center">
   <a href="https://github.com/Mariajtik">
@@ -69,7 +70,7 @@ She prefers velvet skies, abandoned castles, glowing jack-o'-lanterns, and the s
   <i>Give me your star, and I shall guard the night,<br>
   or seven years of bad luck will haunt your sight.<br>
   No candy, no trick — just a wish to share,<br>
-  and a glowing little star is all I ask you to spare.</i>
+  and a shining little star is all I ask you to spare.</i>
 </p>
 
 <p align="center">
