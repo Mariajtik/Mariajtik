@@ -1,37 +1,36 @@
-name: generate animation
+name: Halloween Snake
 
 on:
-
   schedule:
-    - cron: "0 */24 * * *" 
-  
-
+    - cron: '0 0 * * *'
   workflow_dispatch:
-
-  push:
-    branches:
-      - master
 
 jobs:
   generate:
-    permissions: 
-      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+    timeout-minutes: 10
+
     steps:
-      - name: Generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate snake animation
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          color_snake: '#000000'
-          background_color: '#FB8500'
+          color_snake: "FFB703"
+          color_dots: "FB8500"
+          color_background: "4E2A1A"
+          svg_look: "sharp"
+          use_max_color_range: true
 
-      - name: Push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Push generated files to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
