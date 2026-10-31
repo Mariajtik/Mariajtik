@@ -41,14 +41,26 @@
 
 ## The Moonlit Kingdom
 
-- 🌙 Moonlit engineering and calm systems
-- 🎃 Halloween energy in every project
-- 🕸 Curious ideas with a creative edge
-- ✨ AI, code, and elegant execution
+- 🌙 Under the moonlight, I will cast a spell. 🌕
+- 🎃 RISE FROM THE SHADOWS, my creatures of the other side. 
+- 🕸 We'll play a trick on those who dare not respect us. Curious ideas with a creative edge
+- ✨ It's Halloween, it's my time to let loose!
+- ✦✧✦  <b>Happy Halloween, my little visitor </b>  ✦✧✦
 
 <p align="center">
   <img src="./🕸Halloween Hausdeko Ideen - So wird dein Zuhause richtig gruselig.jpeg" width="760" alt="Halloween haunted home decor" />
 </p>
+
+You stepped into my realm beneath the moon,
+
+Now choose your fate—good luck or doom.
+
+Give me your star, and I’ll bless your way,
+
+Or leave it behind, and seven years of bad luck will stay.
+
+Just a wish to share,
+And a shining little star is all I ask you to spare.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/github-contribution-grid-snake.svg" alt="Halloween snake animation" />
