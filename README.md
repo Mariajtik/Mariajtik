@@ -1,13 +1,17 @@
 <p align="center">
-  <img src="./47351056-4bde-4270-bda7-b8f00a30b13c.jpeg" width="980" alt="Haunted portrait" />
-</p>
-
-<p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1200&color=FFB703&center=true&vCenter=true&width=900&height=90&lines=Welcome+to+the+Queen+Ghost+Empire;Midnight+magic+for+curious+minds" alt="Welcome to the Queen Ghost Empire" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Mariajtik&label=ghost+visitors&color=8a2be2&style=for-the-badge" alt="Ghost visitors" />
+  <img src="./47351056-4bde-4270-bda7-b8f00a30b13c.jpeg" width="100%" alt="Haunted portrait" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1200&color=FFB703&center=true&vCenter=true&width=900&height=90&lines=H+A+P+P+Y+|||+H+A+L+L+O+W+E+E+N;Trick+or+Treat+?" alt="Welcome to the Queen Ghost Empire" />
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Mariajtik&label=ghost+visitors&color=000000&style=for-the-badge" alt="Ghost visitors" />
   <img src="https://img.shields.io/badge/Halloween%20Kingdom-Open%20Now-FFB703?style=for-the-badge&logo=ghost&logoColor=white" alt="Halloween kingdom open" />
   <img src="https://img.shields.io/badge/Queen%20of%20the%20Night-Crowned-FB8500?style=for-the-badge" alt="Queen of the night" />
 </p>
@@ -15,15 +19,10 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="./f151f28d-63b1-42ac-b94c-601658ecd61b.jpeg" width="360" alt="Moonlit haunted scene" />
+      <img src="./f151f28d-63b1-42ac-b94c-601658ecd61b.jpeg" width="380px" alt="Moonlit haunted scene" />
     </td>
     <td align="center">
-      <img src="./1d62a707-f986-4a88-b576-b9e6f819d870.jpeg" width="360" alt="Mystic altar" />
-    </td>
-    <td align="center">
-      <video autoplay loop muted playsinline width="360">
-        <source src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/My-CodeSpace/592a8b70893bd9e657151ae2790023a9_720w.mp4" type="video/mp4" />
-      </video>
+      <img src="./1d62a707-f986-4a88-b576-b9e6f819d870.jpeg" width="480px" alt="Mystic altar" />
     </td>
   </tr>
 </table>
