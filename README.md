@@ -32,20 +32,24 @@
 </h1>
 
 <p align="center" style="font-size: 1.2em; line-height: 1.8; color: #f7d27d;">
-  Moonlit code, haunted ideas, and a little magic in every build.
+  This is the kingdom of pumpkins, moonlit silence, black roses, sweet tricks, and the beautiful thrill of October nights. Here, the air is cold, the stars are watchful, and the spirits celebrate in a quiet, charming glow.
+
+<p align="center">
+  ◝(⁰▿⁰)◜  ✧  <b> Ghostly charm, candlelight, and enchanted October dreams...</b>
 </p>
 
-<p align="center" style="font-size: 1.1em; line-height: 1.8; color: #f6b26b;">
-  I build resilient systems, explore AI, and turn bold ideas into clean, useful products.
-</p>
 
 ## The Moonlit Kingdom
+The Queen Ghost loves the hush before midnight, the rustle of autumn leaves, the sparkle of haunted lights, and the kind of magic that turns an ordinary evening into a legend.
 
-- 🌙 Under the moonlight, I will cast a spell. 🌕
+- 🌙 Moonlit magic and midnight charm
+- 🖤 Velvet darkness wrapped in enchanting joy
+- 🍬 Tricky treats, eerie laughs, and celebratory shadows
+- 🌕 Under the moonlight, I will cast a spell.
 - 🎃 RISE FROM THE SHADOWS, my creatures of the other side. 
-- 🕸 We'll play a trick on those who dare not respect us. Curious ideas with a creative edge
+- 🕸 We'll play a trick on those who dare not respect us. 
 - ✨ It's Halloween, it's my time to let loose!
-- ✦✧✦  <b>Happy Halloween, my little visitor </b>  ✦✧✦
+- ✦✧✦  <b>Happy Halloween, my little visitor. May your October be full of glow, magic, and little enchanted miracles. </b>  ✦✧✦
 
 <p align="center">
   <img src="./🕸Halloween Hausdeko Ideen - So wird dein Zuhause richtig gruselig.jpeg" width="760" alt="Halloween haunted home decor" />
