@@ -1,20 +1,21 @@
-
-<img src="./592a8b70893bd9e657151ae2790023a9_720w (1).gif" width="280px" alt="Moonlit haunted scene" />
+<p align="right">
+<img src="./592a8b70893bd9e657151ae2790023a9_720w (1).gif" width="150px" alt="Moonlit haunted scene" />
+</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1200&color=FFB703&center=true&vCenter=true&width=900&height=90&lines=Welcome+to+the+Queen+Ghost+Empire;Midnight+magic+for+curious+minds" alt="Welcome to the Queen Ghost Empire" />
+  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1000&color=FFB703&center=true&vCenter=true&width=900&height=90&lines=Welcome+to+the+Queen+Ghost+Empire;Midnight+magic+for+curious+minds" alt="Welcome to the Queen Ghost Empire" />
 
   
   
 </p>
 
-<p align="center">
-  <img src="./47351056-4bde-4270-bda7-b8f00a30b13c.jpeg" width="100%" alt="Haunted portrait" />
+<p align="left">
+ <img src="./47351056-4bde-4270-bda7-b8f00a30b13c.jpeg" width="150px" alt="Haunted portrait" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1200&color=FFB703&center=true&vCenter=true&width=900&height=90&lines=H+A+P+P+Y+|||+H+A+L+L+O+W+E+E+N;Trick+or+Treat+?" alt="Welcome to the Queen Ghost Empire" />
-</p>
+
+
+
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Mariajtik&label=ghost+visitors&color=000000&style=for-the-badge" alt="Ghost visitors" />
