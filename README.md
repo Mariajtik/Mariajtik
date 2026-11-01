@@ -1,7 +1,10 @@
+
+<img src="./592a8b70893bd9e657151ae2790023a9_720w (1).gif" width="280px" alt="Moonlit haunted scene" />
+
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1200&color=FFB703&center=true&vCenter=true&width=900&height=90&lines=Welcome+to+the+Queen+Ghost+Empire;Midnight+magic+for+curious+minds" alt="Welcome to the Queen Ghost Empire" />
 
-  <img src="./592a8b70893bd9e657151ae2790023a9_720w (1).gif" width="380px" alt="Moonlit haunted scene" />
+  
   
 </p>
 
