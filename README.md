@@ -1,9 +1,6 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=50&pause=1000&color=FB8508&center=true&vCenter=true&width=980&height=980&lines=Let's+make+a+real+party;Come+on+and+join+us" alt="Welcome to the Queen Ghost Empire" />
-
-<p align="right">
-<img src="./592a8b70893bd9e657151ae2790023a9_720w (1).gif" width="150px" alt="Moonlit haunted scene" />
-</p>
+  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=200&pause=1000&color=FB8508&center=true&vCenter=true&width=1900&height=1300&lines=Let's+make+a+real+party;Come+on+and+join+us" alt="Welcome to the Queen Ghost Empire" />
+<img src="./592a8b70893bd9e657151ae2790023a9_720w (1).gif" width="350px" alt="Moonlit haunted scene" />
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=34&pause=1000&color=FFB703&center=true&vCenter=true&width=900&height=90&lines=Welcome+to+the+Queen+Ghost+Empire;Midnight+magic+for+curious+minds" alt="Welcome to the Queen Ghost Empire" />
