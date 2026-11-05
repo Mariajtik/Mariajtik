@@ -30,7 +30,7 @@ jobs:
           use_max_color_range: true
 
       - name: Push generated files to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
