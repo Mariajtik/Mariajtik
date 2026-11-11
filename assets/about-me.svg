@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="381" height="62" viewBox="0 0 381 62" role="img" aria-label="Section 01: ABOUT ME">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F1B2D"/>
+      <stop offset="72%" stop-color="#16263B" stop-opacity=".82"/>
+      <stop offset="100%" stop-color="#16263B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hnum" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2B5368"/>
+      <stop offset="100%" stop-color="#9FD3B0"/>
+    </linearGradient>
+    <linearGradient id="hrule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9FD3B0" stop-opacity=".8"/>
+      <stop offset="60%" stop-color="#2B5368" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#2B5368" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="381" height="62" rx="14" fill="url(#hbg)"/>
+  <rect x="14" y="14" width="46" height="34" rx="10" fill="url(#hnum)" fill-opacity=".22" stroke="#9FD3B0" stroke-opacity=".72"/>
+  <text x="37" y="37" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#9FD3B0">01</text>
+  <text x="76" y="40" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="2.4" fill="#FFFBEA">ABOUT ME</text>
+  <rect x="269" y="30" width="82" height="2.5" rx="1.25" fill="url(#hrule)"/>
+  <circle cx="365" cy="31" r="3.6" fill="#9FD3B0">
+    <animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="0" y="61" width="160" height="1" fill="#9FD3B0" opacity=".55"/>
+</svg>
