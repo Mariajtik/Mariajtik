@@ -59,7 +59,19 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Mariajtik&label=Profile+Views&color=blue&base=0" alt="Profile views">
+  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=minecraft&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=miku&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=gellbooru&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Mariajtik&label=Profile+Views&color=blue&base=1000000" alt="Profile views">
 </div>
 
 
