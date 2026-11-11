@@ -30,8 +30,8 @@
 
 ## 📊 Estatísticas do GitHub
 
-<a href="https://github.com/Mariajtik">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Mariajtik&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&icon_color=FF6B5E" alt="Estatísticas GitHub">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mariajtik&theme=dark&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=true&count_private=true"
+             width="50%" style="display:block; margin:0;" alt="GitHub Stats"/>
 </a>
 <a href="https://github.com/Mariajtik">
 
