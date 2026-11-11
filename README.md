@@ -59,6 +59,10 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
 
 ---
 
+<div align="center">
+  <img src="assets/about-me.svg" alt="Seção sobre mim" width="80%">
+</div>
+
 ## ✨ Sobre mim
 
 Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiável e agradável de usar. Tenho especial interesse em sistemas resilientes, open source e engenharia com IA.
