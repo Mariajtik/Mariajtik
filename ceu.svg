@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" role="img" aria-label="Céu estrelado: cada estrela dada acende um ponto do coração e cada seguidor enche a lua.">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F1B2D"/><stop offset="1" stop-color="#1F3A4D"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#FFF4D6" stop-opacity=".5"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0"/></radialGradient>
+<mask id="m"><rect width="800" height="440" fill="#000"/><circle cx="690" cy="115" r="38" fill="#fff"/><circle cx="662" cy="115" r="38" fill="#000"/></mask>
+</defs>
+<style>
+*{transform-box:fill-box;transform-origin:center}
+@keyframes ig{0%{transform:scale(0);opacity:0}60%{transform:scale(1.6);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes tw{0%,100%{opacity:.2}50%{opacity:.9}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+@keyframes gh{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes shoot{0%,70%{transform:translate(0,0);opacity:0}72%{opacity:1}88%,100%{transform:translate(-240px,130px);opacity:0}}
+@keyframes wave{0%,100%{transform:rotate(-22deg)}50%{transform:rotate(22deg)}}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.halo{fill:#FFD66B;opacity:.25;animation:tw 3s ease-in-out infinite}
+.ln{fill:none;stroke:#9FD3B0;stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .6s ease-out both}
+.out{fill:none;stroke:#9FD3B0;stroke-width:1.5;stroke-dasharray:3 7;opacity:.3}
+.gh{fill:none;stroke:#FF6B5E;stroke-width:2.5;stroke-dasharray:4 4;animation:gh 2.4s ease-in-out infinite}
+.ig{animation:ig .9s ease-out both}
+.bg{fill:#FFF4D6;animation:tw 4s ease-in-out infinite}
+.glow{animation:pulse 6s ease-in-out infinite}
+.shoot{animation:shoot 9s ease-in infinite}
+.arm{transform-origin:50% 100%;animation:wave 1s ease-in-out infinite}
+.fade{animation:rise 1.2s ease-out 1s both}
+.cta{animation:rise 1s ease-out 2s both}
+.btn{animation:beat 2s ease-in-out 3s infinite}
+</style>
+<rect width="800" height="440" rx="24" fill="url(#sky)"/>
+<g>
+<circle class="bg" cx="60" cy="70" r="1.6"/><circle class="bg" cx="140" cy="120" r="1.2" style="animation-delay:1.4s"/>
+<circle class="bg" cx="230" cy="60" r="1.8" style="animation-delay:2.2s"/><circle class="bg" cx="330" cy="75" r="1.4" style="animation-delay:.8s"/>
+<circle class="bg" cx="560" cy="60" r="1.4" style="animation-delay:1s"/><circle class="bg" cx="590" cy="170" r="1.2" style="animation-delay:2.6s"/>
+<circle class="bg" cx="760" cy="200" r="1.6" style="animation-delay:.5s"/><circle class="bg" cx="90" cy="200" r="1.4" style="animation-delay:3.3s"/>
+<circle class="bg" cx="200" cy="270" r="1.2" style="animation-delay:2s"/><circle class="bg" cx="480" cy="45" r="1.3" style="animation-delay:2.9s"/>
+</g>
+<g class="shoot"><path d="M700 40 L750 12" stroke="#FFF4D6" stroke-width="2" stroke-linecap="round"/><circle cx="700" cy="40" r="2.6" fill="#FFF4D6"/></g>
+<circle class="glow" cx="690" cy="115" r="90" fill="url(#glow)" opacity="0.54"/>
+<circle cx="690" cy="115" r="38" fill="none" stroke="#FFF4D6" stroke-width="1.5" stroke-dasharray="3 5" opacity=".4"/>
+<g mask="url(#m)"><circle cx="690" cy="115" r="38" fill="#FFF4D6"/><circle cx="676" cy="104" r="7" fill="#EBDDB0"/><circle cx="702" cy="128" r="9" fill="#EBDDB0"/></g>
+<text x="690" y="176" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#FFF4D6" opacity=".85">🌙 faltam 13 👤 para a lua cheia</text>
+<path class="out" d="M400 148 L407 127 L442 98 L495 107 L520 155 L495 210 L442 257 L407 296 L400 312 L393 296 L358 257 L305 210 L280 155 L305 107 L358 98 L393 127Z"/>
+<path class="ln" pathLength="1" d="M400 148 L407 127" style="animation-delay:0.35s"/><path class="ln" pathLength="1" d="M407 127 L442 98" style="animation-delay:0.70s"/><path class="ln" pathLength="1" d="M442 98 L495 107" style="animation-delay:1.05s"/><path class="ln" pathLength="1" d="M495 107 L520 155" style="animation-delay:1.40s"/><path class="ln" pathLength="1" d="M520 155 L495 210" style="animation-delay:1.75s"/><path class="ln" pathLength="1" d="M495 210 L442 257" style="animation-delay:2.10s"/><path class="ln" pathLength="1" d="M442 257 L407 296" style="animation-delay:2.45s"/><path class="ln" pathLength="1" d="M407 296 L400 312" style="animation-delay:2.80s"/><path class="ln" pathLength="1" d="M400 312 L393 296" style="animation-delay:3.15s"/><path class="ln" pathLength="1" d="M393 296 L358 257" style="animation-delay:3.50s"/><path class="ln" pathLength="1" d="M358 257 L305 210" style="animation-delay:3.85s"/><path class="ln" pathLength="1" d="M305 210 L280 155" style="animation-delay:4.20s"/><path class="ln" pathLength="1" d="M280 155 L305 107" style="animation-delay:4.55s"/><path class="ln" pathLength="1" d="M305 107 L358 98" style="animation-delay:4.90s"/><path class="ln" pathLength="1" d="M358 98 L393 127" style="animation-delay:5.25s"/><g class="ig" style="animation-delay:0.00s"><circle class="halo" cx="400" cy="148" r="13"/><circle fill="#FFD66B" cx="400" cy="148" r="5"/></g><g class="ig" style="animation-delay:0.35s"><circle class="halo" cx="407" cy="127" r="13"/><circle fill="#FFD66B" cx="407" cy="127" r="5"/></g><g class="ig" style="animation-delay:0.70s"><circle class="halo" cx="442" cy="98" r="13"/><circle fill="#FFD66B" cx="442" cy="98" r="5"/></g><g class="ig" style="animation-delay:1.05s"><circle class="halo" cx="495" cy="107" r="13"/><circle fill="#FFD66B" cx="495" cy="107" r="5"/></g><g class="ig" style="animation-delay:1.40s"><circle class="halo" cx="520" cy="155" r="13"/><circle fill="#FFD66B" cx="520" cy="155" r="5"/></g><g class="ig" style="animation-delay:1.75s"><circle class="halo" cx="495" cy="210" r="13"/><circle fill="#FFD66B" cx="495" cy="210" r="5"/></g><g class="ig" style="animation-delay:2.10s"><circle class="halo" cx="442" cy="257" r="13"/><circle fill="#FFD66B" cx="442" cy="257" r="5"/></g><g class="ig" style="animation-delay:2.45s"><circle class="halo" cx="407" cy="296" r="13"/><circle fill="#FFD66B" cx="407" cy="296" r="5"/></g><g class="ig" style="animation-delay:2.80s"><circle class="halo" cx="400" cy="312" r="13"/><circle fill="#FFD66B" cx="400" cy="312" r="5"/></g><g class="ig" style="animation-delay:3.15s"><circle class="halo" cx="393" cy="296" r="13"/><circle fill="#FFD66B" cx="393" cy="296" r="5"/></g><g class="ig" style="animation-delay:3.50s"><circle class="halo" cx="358" cy="257" r="13"/><circle fill="#FFD66B" cx="358" cy="257" r="5"/></g><g class="ig" style="animation-delay:3.85s"><circle class="halo" cx="305" cy="210" r="13"/><circle fill="#FFD66B" cx="305" cy="210" r="5"/></g><g class="ig" style="animation-delay:4.20s"><circle class="halo" cx="280" cy="155" r="13"/><circle fill="#FFD66B" cx="280" cy="155" r="5"/></g><g class="ig" style="animation-delay:4.55s"><circle class="halo" cx="305" cy="107" r="13"/><circle fill="#FFD66B" cx="305" cy="107" r="5"/></g><g class="ig" style="animation-delay:4.90s"><circle class="halo" cx="358" cy="98" r="13"/><circle fill="#FFD66B" cx="358" cy="98" r="5"/></g><g class="ig" style="animation-delay:5.25s"><circle class="halo" cx="393" cy="127" r="13"/><circle fill="#FFD66B" cx="393" cy="127" r="5"/></g>
+<g class="fade"><rect x="130" y="16" width="470" height="32" rx="16" fill="#0A1420" fill-opacity=".8" stroke="#9FD3B0" stroke-width="1.5"/>
+<text x="365" y="37" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#FFF4D6">💛 Constelação completa! Obrigada a cada estrela</text></g>
+<path d="M0 372 Q200 355 400 372 T800 366 V440 H0Z" fill="#5A4030"/>
+<path d="M0 372 Q200 355 400 372 T800 366 V378 Q600 370 400 380 T0 380Z" fill="#9FD3B0" opacity=".6"/>
+<rect x="598" y="318" width="14" height="52" rx="5" fill="#7A5A44"/>
+<circle cx="605" cy="300" r="34" fill="#6FA683"/><circle cx="580" cy="318" r="22" fill="#5E9475"/><circle cx="630" cy="318" r="22" fill="#5E9475"/>
+<g fill="#FF6B5E"><circle cx="595" cy="294" r="5"/><circle cx="620" cy="306" r="5"/><circle cx="582" cy="318" r="5"/><circle cx="632" cy="322" r="5"/></g>
+<rect x="112" y="332" width="12" height="32" rx="6" fill="#7A5A44"/><rect x="136" y="332" width="12" height="32" rx="6" fill="#7A5A44"/>
+<rect x="104" y="245" width="52" height="95" rx="24" fill="#FF6B5E"/>
+<rect x="94" y="252" width="12" height="52" rx="6" fill="#FF6B5E"/><circle cx="100" cy="308" r="7" fill="#F1D3B8"/>
+<g class="arm"><rect x="154" y="212" width="12" height="48" rx="6" fill="#FF6B5E"/><circle cx="160" cy="208" r="8" fill="#F1D3B8"/></g>
+<circle cx="130" cy="215" r="28" fill="#F1D3B8"/>
+<path d="M102 214 a28 28 0 0 1 56 0 q-28 -16 -56 0z" fill="#7A5A44"/>
+<circle cx="120" cy="218" r="3" fill="#3B2A1E"/><circle cx="140" cy="218" r="3" fill="#3B2A1E"/>
+<path d="M121 228 q9 8 18 0" stroke="#3B2A1E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="113" cy="226" r="4" fill="#FF6B5E" opacity=".4"/><circle cx="147" cy="226" r="4" fill="#FF6B5E" opacity=".4"/>
+<g class="cta btn"><rect x="172" y="150" width="112" height="34" rx="17" fill="#FFF4D6"/>
+<text x="228" y="172" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#C4483C">Acende uma? ⭐</text></g>
+<g class="cta"><rect x="40" y="388" width="720" height="38" rx="12" fill="#0A1420" fill-opacity=".85"/>
+<text x="400" y="412" text-anchor="middle" font-family="monospace" font-size="15" fill="#FFF4D6"><tspan fill="#9FD3B0">$</tspan> ⭐ star = <tspan fill="#FF6B5E">1 ponto aceso</tspan> · 👤 follow = <tspan fill="#FF6B5E">lua mais cheia</tspan> · leva 3 segundos</text></g>
+</svg>
