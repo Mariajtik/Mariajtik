@@ -95,15 +95,15 @@ def build(cal: dict) -> str:
     for k, d in enumerate(top3):
         x, y, c = stars[d["date"]]
         lab = dt.date.fromisoformat(d["date"]).strftime("%b %d").upper()
-        el.append(f'    <g stroke="#f5f3ff" stroke-opacity=".8" stroke-width="1.2"><line x1="{x - 18:.0f}" y1="{y:.0f}" x2="{x - 9:.0f}" y2="{y:.0f}"/><line x1="{x + 9:.0f}" y1="{y:.0f}" x2="{x + 18:.0f}" y2="{y:.0f}"/><line x1="{x:.0f}" y1="{y - 18:.0f}" x2="{x:.0f}" y2="{y - 9:.0f}"/><line x1="{x:.0f}" y1="{y + 9:.0f}" x2="{x:.0f}" y2="{y + 18:.0f}"/></g>')
+        el.append(f'    <g stroke="#F4F7FA" stroke-opacity=".8" stroke-width="1.2"><line x1="{x - 18:.0f}" y1="{y:.0f}" x2="{x - 9:.0f}" y2="{y:.0f}"/><line x1="{x + 9:.0f}" y1="{y:.0f}" x2="{x + 18:.0f}" y2="{y:.0f}"/><line x1="{x:.0f}" y1="{y - 18:.0f}" x2="{x:.0f}" y2="{y - 9:.0f}"/><line x1="{x:.0f}" y1="{y + 9:.0f}" x2="{x:.0f}" y2="{y + 18:.0f}"/></g>')
         el.append(f'    <circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="none" stroke="#f5f3ff" stroke-opacity=".7" stroke-width="1.2"><animate attributeName="r" values="6;30" dur="4.6s" begin="{k * 1.5:.1f}s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="4.6s" begin="{k * 1.5:.1f}s" repeatCount="indefinite"/></circle>')
         side = 1 if x < W - 190 else -1
         tx = x + side * 26
-        el.append(f'    <text x="{tx:.0f}" y="{y - 12:.0f}" text-anchor="{"start" if side > 0 else "end"}" font-family="{MONO}" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#e9d5ff">{lab} · {c}</text>')
+        el.append(f'    <text x="{tx:.0f}" y="{y - 12:.0f}" text-anchor="{"start" if side > 0 else "end"}" font-family="{MONO}" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#F4F7FA">{lab} · {c}</text>')
 
     lx = sum(stars[d][0] for d in longest) / len(longest)
     ly = min(stars[d][1] for d in longest)
-    el.append(f'    <text x="{lx:.0f}" y="{ly - 26:.0f}" text-anchor="middle" font-family="{MONO}" font-size="10.5" font-weight="700" letter-spacing="1.4" fill="#c4b5fd">LONGEST RUN · {len(longest)} NIGHTS</text>')
+    el.append(f'    <text x="{lx:.0f}" y="{ly - 26:.0f}" text-anchor="middle" font-family="{MONO}" font-size="10.5" font-weight="700" letter-spacing="1.4" fill="#F4F7FA">LONGEST RUN · {len(longest)} NIGHTS</text>')
 
     n_stars, n_runs = len(stars), sum(1 for r in runs if len(r) > 1)
     era = f"{span + 1} DAYS"
@@ -116,7 +116,7 @@ def build(cal: dict) -> str:
     <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#16263B"/>
       <stop offset="55%" stop-color="#16263B"/>
-      <stop offset="100%" stop-color="#8EDCF2"/>
+      <stop offset="100%" stop-color="#16263B"/>
     </linearGradient>
     <filter id="cblur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
   </defs>
