@@ -114,9 +114,9 @@ def build(cal: dict) -> str:
   <desc id="cd">A star map where each star is one day of real commit activity, sized by volume, with lines connecting consecutive days and the longest streak highlighted.</desc>
   <defs>
     <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0F1B2D"/>
-      <stop offset="55%" stop-color="#9FD3B0"/>
-      <stop offset="100%" stop-color="#FF6B5E"/>
+      <stop offset="0%" stop-color="#16263B"/>
+      <stop offset="55%" stop-color="#16263B"/>
+      <stop offset="100%" stop-color="#8EDCF2"/>
     </linearGradient>
     <filter id="cblur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
   </defs>
