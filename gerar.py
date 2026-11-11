@@ -42,7 +42,7 @@ lines = "".join(
 
 def star(x, y, r, d):
     return (f'<g class="ig" style="animation-delay:{d:.2f}s">'
-            f'<circle cx="{x}" cy="{y}" r="{r*5}" fill="url(#sg)"/>'
+            f'<circle class="halo" cx="{x}" cy="{y}" r="{r*5}" fill="url(#sg)"/>'
             f'<path d="M{x-r*4} {y} H{x+r*4} M{x} {y-r*4} V{y+r*4}" stroke="#FFF4D6" stroke-width=".7" opacity=".7"/>'
             f'<circle cx="{x}" cy="{y}" r="{r}" fill="#FFFBEA"/></g>')
 
@@ -61,32 +61,30 @@ for i in range(lit, N):
     else:
         ghosts += f'<circle class="gh" cx="{x}" cy="{y}" r="6"/><circle cx="{x}" cy="{y}" r="1.4" fill="#FF6B5E" opacity=".6"/>'
 
-rnd = random.Random(7)
-bg = ""
-for _ in range(260):
-    x, y = rnd.uniform(0, 1000), rnd.uniform(0, 440)
-    r = rnd.choice([.5, .6, .7, .8, 1, 1.2, 1.6])
-    o = rnd.uniform(.3, .9)
-    tw = f' class="tw" style="animation-delay:{rnd.uniform(0,6):.1f}s"' if rnd.random() < .12 else ""
-    bg += f'<circle{tw} cx="{x:.0f}" cy="{y:.0f}" r="{r}" fill="#FFF4D6" opacity="{o:.2f}"/>'
-dust = ""
-for _ in range(140):
-    t = rnd.uniform(0, 1)
-    x = 80 + t * 640 + rnd.gauss(0, 45)
-    y = 40 + t * 330 + rnd.gauss(0, 45)
-    dust += f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rnd.choice([.5,.6,.8])}" fill="#CFE0FF" opacity="{rnd.uniform(.3,.7):.2f}"/>'
+import base64
+IMG = base64.b64encode(open("bg.jpg", "rb").read()).decode()
 
+QUEST = "Help me complete this mission by lighting one more star, noble traveler."
 if lit >= N:
-    titulo, sub = "Capricórnio completo", "Obrigada a cada estrela que brilha aqui."
+    titulo, sub = "Capricornus complete", "Thank you to every star that shines here."
+    QUEST = "Mission complete. Thank you, noble traveler."
 elif stars == 0:
-    titulo, sub = "Capricórnio, à espera", "Seja quem acende a primeira estrela."
+    titulo, sub = "Capricornus, waiting", "Be the one to light the first star."
 else:
-    titulo, sub = f"Capricórnio: {lit} de {N} estrelas", f"Faltam {N-lit} para completar a constelação."
+    titulo, sub = f"Capricornus: {lit} of {N} stars", f"{N-lit} more to complete the constellation."
+
+r2 = random.Random(11)
+sparks = ""
+for _ in range(40):
+    x, y, s = r2.uniform(30, 970), r2.uniform(20, 410), r2.choice([3, 4, 5])
+    sparks += (f'<g class="sp" style="transform-box:fill-box;transform-origin:center;animation-delay:{r2.uniform(0,5):.1f}s;animation-duration:{r2.uniform(2.2,4.5):.1f}s">'
+               f'<path d="M{x-s*2:.0f} {y:.0f}H{x+s*2:.0f}M{x:.0f} {y-s*2:.0f}V{y+s*2:.0f}" stroke="#FFF4D6" stroke-width=".8"/>'
+               f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{s/3:.1f}" fill="#FFFBEA"/></g>')
 
 svg = open("ceu.template.svg", encoding="utf-8").read()
-troca = {"__DUST__": dust, "__BG__": bg, "__RING__": f"{prog*100:.1f}", "__FOL__": str(fol),
+troca = {"__IMG__": IMG, "__RING__": f"{prog*100:.1f}", "__FOL__": str(fol),
          "__META__": str(meta), "__OUTLINE__": outline, "__LINES__": lines, "__GHOSTS__": ghosts,
-         "__DOTS__": dots, "__LABELS__": labels, "__TITULO__": titulo, "__SUB__": sub}
+         "__DOTS__": dots, "__LABELS__": labels, "__TITULO__": titulo, "__SUB__": sub, "__QUEST__": QUEST, "__SPARKS__": sparks}
 for k, v in troca.items():
     svg = svg.replace(k, v)
 
