@@ -34,7 +34,9 @@
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=Mariajtik&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&icon_color=FF6B5E" alt="Estatísticas GitHub">
 </a>
 <a href="https://github.com/Mariajtik">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mariajtik&layout=compact&langs_count=10&hide_border=true&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3" alt="Até 10 linguagens mais usadas">
+
+   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&theme=dark&langs_count=20&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=false&count_private=false&layout=compact"
+             width="50%" style="display:block; margin:0;" alt="Top Languages"/>
 </a>
 
 <a href="https://github.com/Mariajtik">
