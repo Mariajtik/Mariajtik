@@ -1,5 +1,6 @@
-import os, json, math, urllib.request
-U = "Mariajtik"; N = 16
+import os, json, math, random, urllib.request
+
+U, META = "Mariajtik", 20
 
 def api(p):
     r = urllib.request.Request("https://api.github.com/" + p, headers={
@@ -8,98 +9,100 @@ def api(p):
 
 stars = sum(r["stargazers_count"] for r in api(f"users/{U}/repos?per_page=100"))
 fol = api(f"users/{U}")["followers"]
-lit = min(stars, N)
-meta = (fol // 20 + 1) * 20
-p = (fol - (meta - 20)) / 20
 
-pts = []
-for i in range(N):
-    t = 2 * math.pi * i / N
-    x = 16 * math.sin(t) ** 3
-    y = 13*math.cos(t) - 5*math.cos(2*t) - 2*math.cos(3*t) - math.cos(4*t)
-    pts.append((round(400 + x * 7.5), round(185 - y * 7.5)))
+# Capricornus: (nome, RA em horas, Dec em graus, raio, rótulo)
+CAP = [
+    ("Algedi", 20.30, -12.5, 3.4, "Algedi"),
+    ("Dabih", 20.35, -14.8, 3.6, "Dabih"),
+    ("psi", 20.77, -25.3, 3.0, ""),
+    ("omega", 20.85, -26.9, 2.8, ""),
+    ("zeta", 21.44, -22.4, 3.0, ""),
+    ("epsilon", 21.62, -19.5, 2.8, ""),
+    ("kappa", 21.78, -18.9, 2.6, ""),
+    ("delta", 21.78, -16.1, 4.0, "Deneb Algedi"),
+    ("gamma", 21.67, -16.7, 3.4, "Nashira"),
+    ("iota", 21.10, -16.8, 3.0, ""),
+]
+N = len(CAP)
+lit = min(stars, N)
+meta = (fol // META + 1) * META
+prog = (fol - (meta - META)) / META
+
+pts = [(round(430 + (21.04 - ra) * 312), round(270 - (dec + 19.7) * 22)) for _, ra, dec, _, _ in CAP]
 
 outline = "M" + " L".join(f"{x} {y}" for x, y in pts) + "Z"
+segs = [(i - 1, i) for i in range(1, lit)]
+if lit >= N:
+    segs.append((N - 1, 0))
 lines = "".join(
-    f'<path class="ln" pathLength="1" d="M{pts[i-1][0]} {pts[i-1][1]} L{pts[i][0]} {pts[i][1]}" style="animation-delay:{i*.35:.2f}s"/>'
-    for i in range(1, lit))
-dots = "".join(
-    f'<g class="ig" style="animation-delay:{i*.35:.2f}s"><circle class="halo" cx="{x}" cy="{y}" r="13"/><circle fill="#FFD66B" cx="{x}" cy="{y}" r="5"/></g>'
-    for i, (x, y) in enumerate(pts[:lit]))
-ghosts = "".join(f'<circle class="gh" cx="{x}" cy="{y}" r="9" style="animation-delay:{i*.2:.1f}s"/>'
-                 for i, (x, y) in enumerate(pts[lit:]))
+    f'<path class="ln" pathLength="1" d="M{pts[a][0]} {pts[a][1]} L{pts[b][0]} {pts[b][1]}" style="animation-delay:{k*.35:.2f}s"/>'
+    for k, (a, b) in enumerate(segs))
+
+def star(x, y, r, d):
+    return (f'<g class="ig" style="animation-delay:{d:.2f}s">'
+            f'<circle cx="{x}" cy="{y}" r="{r*5}" fill="url(#sg)"/>'
+            f'<path d="M{x-r*4} {y} H{x+r*4} M{x} {y-r*4} V{y+r*4}" stroke="#FFF4D6" stroke-width=".7" opacity=".7"/>'
+            f'<circle cx="{x}" cy="{y}" r="{r}" fill="#FFFBEA"/></g>')
+
+dots, labels = "", ""
+for i in range(lit):
+    x, y = pts[i]; r = CAP[i][3]
+    dots += star(x, y, r, i * .35)
+    if CAP[i][4]:
+        labels += f'<text class="lb" x="{x+12}" y="{y-10}" style="animation-delay:{i*.35+.5:.2f}s">{CAP[i][4]}</text>'
+
+ghosts = ""
+for i in range(lit, N):
+    x, y = pts[i]
+    if i == lit:
+        ghosts += f'<circle class="next" cx="{x}" cy="{y}" r="9"/><circle cx="{x}" cy="{y}" r="2" fill="#FF6B5E"/>'
+    else:
+        ghosts += f'<circle class="gh" cx="{x}" cy="{y}" r="6"/><circle cx="{x}" cy="{y}" r="1.4" fill="#FF6B5E" opacity=".6"/>'
+
+rnd = random.Random(7)
+bg = ""
+for _ in range(260):
+    x, y = rnd.uniform(0, 1000), rnd.uniform(0, 440)
+    r = rnd.choice([.5, .6, .7, .8, 1, 1.2, 1.6])
+    o = rnd.uniform(.3, .9)
+    tw = f' class="tw" style="animation-delay:{rnd.uniform(0,6):.1f}s"' if rnd.random() < .12 else ""
+    bg += f'<circle{tw} cx="{x:.0f}" cy="{y:.0f}" r="{r}" fill="#FFF4D6" opacity="{o:.2f}"/>'
+dust = ""
+for _ in range(140):
+    t = rnd.uniform(0, 1)
+    x = 80 + t * 640 + rnd.gauss(0, 45)
+    y = 40 + t * 330 + rnd.gauss(0, 45)
+    dust += f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rnd.choice([.5,.6,.8])}" fill="#CFE0FF" opacity="{rnd.uniform(.3,.7):.2f}"/>'
 
 if lit >= N:
-    pill = "💛 Constelação completa! Obrigada a cada estrela"
+    titulo, sub = "Capricórnio completo", "Obrigada a cada estrela que brilha aqui."
 elif stars == 0:
-    pill = "✨ Seja quem acende a primeira estrela do céu"
+    titulo, sub = "Capricórnio, à espera", "Seja quem acende a primeira estrela."
 else:
-    pill = f"⭐ {stars} acesas · 👥 {fol} seguidores · faltam {N-lit} ⭐ para fechar o coração"
+    titulo, sub = f"Capricórnio: {lit} de {N} estrelas", f"Faltam {N-lit} para completar a constelação."
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" role="img" aria-label="Céu estrelado: cada estrela dada acende um ponto do coração e cada seguidor enche a lua.">
+CSS = """
+.ig{transform-box:fill-box;transform-origin:center;animation:ig .9s ease-out both}
+.ln{fill:none;stroke:#9FD3B0;stroke-width:1.3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .7s ease-out both;opacity:.85}
+.out{fill:none;stroke:#9FD3B0;stroke-width:1;stroke-dasharray:2 8;opacity:.28}
+.gh{fill:none;stroke:#FF6B5E;stroke-width:1.2;stroke-dasharray:2 3;opacity:.5}
+.next{fill:none;stroke:#FF6B5E;stroke-width:1.8;stroke-dasharray:3 3;transform-box:fill-box;transform-origin:center;animation:nx 1.8s ease-in-out infinite}
+.tw{animation:tw 4s ease-in-out infinite}
+.lb{font-family:Georgia,serif;font-size:13px;font-style:italic;fill:#FFF4D6;opacity:0;animation:rise 1s ease-out forwards}
+.fade{animation:rise 1.2s ease-out .4s both}
+.moonglow{transform-box:fill-box;transform-origin:center;animation:pulse 7s ease-in-out infinite}
+@keyframes ig{0%{transform:scale(0);opacity:0}60%{transform:scale(1.5);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes nx{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.6);opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+"""
+
+svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" role="img" aria-label="Céu noturno com a constelação de Capricórnio. Cada estrela dada no repositório acende uma estrela da constelação.">
 <defs>
-<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F1B2D"/><stop offset="1" stop-color="#1F3A4D"/></linearGradient>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050A18"/><stop offset=".6" stop-color="#0D1B33"/><stop offset="1" stop-color="#1F3A4D"/></linearGradient>
+<radialGradient id="sg"><stop offset="0" stop-color="#FFD66B" stop-opacity=".55"/><stop offset="1" stop-color="#FFD66B" stop-opacity="0"/></radialGradient>
 <radialGradient id="glow"><stop offset="0" stop-color="#FFF4D6" stop-opacity=".5"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0"/></radialGradient>
-<mask id="m"><rect width="800" height="440" fill="#000"/><circle cx="690" cy="115" r="38" fill="#fff"/><circle cx="{690-80*p:.0f}" cy="115" r="38" fill="#000"/></mask>
-</defs>
-<style>
-*{{transform-box:fill-box;transform-origin:center}}
-@keyframes ig{{0%{{transform:scale(0);opacity:0}}60%{{transform:scale(1.6);opacity:1}}100%{{transform:scale(1);opacity:1}}}}
-@keyframes draw{{from{{stroke-dashoffset:1}}to{{stroke-dashoffset:0}}}}
-@keyframes tw{{0%,100%{{opacity:.2}}50%{{opacity:.9}}}}
-@keyframes pulse{{0%,100%{{transform:scale(1)}}50%{{transform:scale(1.12)}}}}
-@keyframes gh{{0%,100%{{opacity:.25}}50%{{opacity:1}}}}
-@keyframes shoot{{0%,70%{{transform:translate(0,0);opacity:0}}72%{{opacity:1}}88%,100%{{transform:translate(-240px,130px);opacity:0}}}}
-@keyframes wave{{0%,100%{{transform:rotate(-22deg)}}50%{{transform:rotate(22deg)}}}}
-@keyframes rise{{from{{opacity:0;transform:translateY(8px)}}to{{opacity:1;transform:translateY(0)}}}}
-@keyframes beat{{0%,100%{{transform:scale(1)}}50%{{transform:scale(1.06)}}}}
-.halo{{fill:#FFD66B;opacity:.25;animation:tw 3s ease-in-out infinite}}
-.ln{{fill:none;stroke:#9FD3B0;stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .6s ease-out both}}
-.out{{fill:none;stroke:#9FD3B0;stroke-width:1.5;stroke-dasharray:3 7;opacity:.3}}
-.gh{{fill:none;stroke:#FF6B5E;stroke-width:2.5;stroke-dasharray:4 4;animation:gh 2.4s ease-in-out infinite}}
-.ig{{animation:ig .9s ease-out both}}
-.bg{{fill:#FFF4D6;animation:tw 4s ease-in-out infinite}}
-.glow{{animation:pulse 6s ease-in-out infinite}}
-.shoot{{animation:shoot 9s ease-in infinite}}
-.arm{{transform-origin:50% 100%;animation:wave 1s ease-in-out infinite}}
-.fade{{animation:rise 1.2s ease-out 1s both}}
-.cta{{animation:rise 1s ease-out 2s both}}
-.btn{{animation:beat 2s ease-in-out 3s infinite}}
-</style>
-<rect width="800" height="440" rx="24" fill="url(#sky)"/>
-<g>
-<circle class="bg" cx="60" cy="70" r="1.6"/><circle class="bg" cx="140" cy="120" r="1.2" style="animation-delay:1.4s"/>
-<circle class="bg" cx="230" cy="60" r="1.8" style="animation-delay:2.2s"/><circle class="bg" cx="330" cy="75" r="1.4" style="animation-delay:.8s"/>
-<circle class="bg" cx="560" cy="60" r="1.4" style="animation-delay:1s"/><circle class="bg" cx="590" cy="170" r="1.2" style="animation-delay:2.6s"/>
-<circle class="bg" cx="760" cy="200" r="1.6" style="animation-delay:.5s"/><circle class="bg" cx="90" cy="200" r="1.4" style="animation-delay:3.3s"/>
-<circle class="bg" cx="200" cy="270" r="1.2" style="animation-delay:2s"/><circle class="bg" cx="480" cy="45" r="1.3" style="animation-delay:2.9s"/>
-</g>
-<g class="shoot"><path d="M700 40 L750 12" stroke="#FFF4D6" stroke-width="2" stroke-linecap="round"/><circle cx="700" cy="40" r="2.6" fill="#FFF4D6"/></g>
-<circle class="glow" cx="690" cy="115" r="90" fill="url(#glow)" opacity="{.3+.7*p:.2f}"/>
-<circle cx="690" cy="115" r="38" fill="none" stroke="#FFF4D6" stroke-width="1.5" stroke-dasharray="3 5" opacity=".4"/>
-<g mask="url(#m)"><circle cx="690" cy="115" r="38" fill="#FFF4D6"/><circle cx="676" cy="104" r="7" fill="#EBDDB0"/><circle cx="702" cy="128" r="9" fill="#EBDDB0"/></g>
-<text x="690" y="176" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#FFF4D6" opacity=".85">🌙 faltam {meta-fol} 👤 para a lua cheia</text>
-<path class="out" d="{outline}"/>
-{lines}{ghosts}{dots}
-<g class="fade"><rect x="130" y="16" width="470" height="32" rx="16" fill="#0A1420" fill-opacity=".8" stroke="#9FD3B0" stroke-width="1.5"/>
-<text x="365" y="37" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#FFF4D6">{pill}</text></g>
-<path d="M0 372 Q200 355 400 372 T800 366 V440 H0Z" fill="#5A4030"/>
-<path d="M0 372 Q200 355 400 372 T800 366 V378 Q600 370 400 380 T0 380Z" fill="#9FD3B0" opacity=".6"/>
-<rect x="598" y="318" width="14" height="52" rx="5" fill="#7A5A44"/>
-<circle cx="605" cy="300" r="34" fill="#6FA683"/><circle cx="580" cy="318" r="22" fill="#5E9475"/><circle cx="630" cy="318" r="22" fill="#5E9475"/>
-<g fill="#FF6B5E"><circle cx="595" cy="294" r="5"/><circle cx="620" cy="306" r="5"/><circle cx="582" cy="318" r="5"/><circle cx="632" cy="322" r="5"/></g>
-<rect x="112" y="332" width="12" height="32" rx="6" fill="#7A5A44"/><rect x="136" y="332" width="12" height="32" rx="6" fill="#7A5A44"/>
-<rect x="104" y="245" width="52" height="95" rx="24" fill="#FF6B5E"/>
-<rect x="94" y="252" width="12" height="52" rx="6" fill="#FF6B5E"/><circle cx="100" cy="308" r="7" fill="#F1D3B8"/>
-<g class="arm"><rect x="154" y="212" width="12" height="48" rx="6" fill="#FF6B5E"/><circle cx="160" cy="208" r="8" fill="#F1D3B8"/></g>
-<circle cx="130" cy="215" r="28" fill="#F1D3B8"/>
-<path d="M102 214 a28 28 0 0 1 56 0 q-28 -16 -56 0z" fill="#7A5A44"/>
-<circle cx="120" cy="218" r="3" fill="#3B2A1E"/><circle cx="140" cy="218" r="3" fill="#3B2A1E"/>
-<path d="M121 228 q9 8 18 0" stroke="#3B2A1E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<circle cx="113" cy="226" r="4" fill="#FF6B5E" opacity=".4"/><circle cx="147" cy="226" r="4" fill="#FF6B5E" opacity=".4"/>
-<g class="cta btn"><rect x="172" y="150" width="112" height="34" rx="17" fill="#FFF4D6"/>
-<text x="228" y="172" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#C4483C">Acende uma? ⭐</text></g>
-<g class="cta"><rect x="40" y="388" width="720" height="38" rx="12" fill="#0A1420" fill-opacity=".85"/>
-<text x="400" y="412" text-anchor="middle" font-family="monospace" font-size="15" fill="#FFF4D6"><tspan fill="#9FD3B0">$</tspan> ⭐ star = <tspan fill="#FF6B5E">1 ponto aceso</tspan> · 👤 follow = <tspan fill="#FF6B5E">lua mais cheia</tspan> · leva 3 segundos</text></g>
-</svg>'''
-open("ceu.svg", "w", encoding="utf-8").write(svg)
+<radialGradient id="moon" cx=".38" cy=".35" r=".75"><stop offset="0" stop-color="#FFFEF6"/><stop offset=".7" stop-color="#EFE5C6"/><stop offset="1" stop-color="#CFC4A0"/></radialGradient>
+<filter id="b40" x="-50%" y="-50%" width="200%"
