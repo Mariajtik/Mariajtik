@@ -103,6 +103,14 @@ Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiá
 
 <a href="https://github.com/Mariajtik?tab=followers"><img src="https://img.shields.io/badge/Seguir_no_GitHub-FF6B5E?style=for-the-badge&logo=github&logoColor=white" alt="Seguir no GitHub"></a>
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg" />
+    <img src="https://raw.githubusercontent.com/EimanTahir027/Mariajtik/output/pacman-contribution-graph.svg" alt="Pacman contribution animation" />
+  </picture>
+</div>
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:9FD3B0,100:0F1B2D&height=110&section=footer" alt="Rodapé decorativo">
 
 </div>
