@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="ct cd">
-  <title id="ct">Commit constellation: 1162 contributions across 63 active days across the recorded era</title>
+  <title id="ct">Commit constellation: 1163 contributions across 63 active days across the recorded era</title>
   <desc id="cd">A star map where each star is one day of real commit activity, sized by volume, with lines connecting consecutive days and the longest streak highlighted.</desc>
   <defs>
     <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#16263B"/>
       <stop offset="55%" stop-color="#16263B"/>
-      <stop offset="100%" stop-color="#8EDCF2"/>
+      <stop offset="100%" stop-color="#16263B"/>
     </linearGradient>
     <filter id="cblur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
   </defs>
@@ -205,18 +205,18 @@
     <circle cx="1140.0" cy="156.3" r="28.8" fill="#f5f3ff" opacity=".16" filter="url(#cblur)"><animate attributeName="opacity" values=".16;.28;.16" dur="5.6s" begin="1.0s" repeatCount="indefinite"/></circle>
     <circle cx="1140.0" cy="156.3" r="12.0" fill="#f5f3ff" fill-opacity=".95"><animate attributeName="opacity" values="1;.62;1" dur="3.2s" begin="2.2s" repeatCount="indefinite"/></circle>
     <circle cx="1140.0" cy="156.3" r="4.6" fill="#ffffff" opacity=".9"><animate attributeName="opacity" values=".9;.5;.9" dur="3.2s" begin="2.2s" repeatCount="indefinite"/></circle>
-    <g stroke="#f5f3ff" stroke-opacity=".8" stroke-width="1.2"><line x1="738" y1="138" x2="747" y2="138"/><line x1="765" y1="138" x2="774" y2="138"/><line x1="756" y1="120" x2="756" y2="129"/><line x1="756" y1="147" x2="756" y2="156"/></g>
+    <g stroke="#F4F7FA" stroke-opacity=".8" stroke-width="1.2"><line x1="738" y1="138" x2="747" y2="138"/><line x1="765" y1="138" x2="774" y2="138"/><line x1="756" y1="120" x2="756" y2="129"/><line x1="756" y1="147" x2="756" y2="156"/></g>
     <circle cx="756.0" cy="137.9" r="6" fill="none" stroke="#f5f3ff" stroke-opacity=".7" stroke-width="1.2"><animate attributeName="r" values="6;30" dur="4.6s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="4.6s" begin="0.0s" repeatCount="indefinite"/></circle>
-    <text x="782" y="126" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#e9d5ff">JUL 03 · 155</text>
-    <g stroke="#f5f3ff" stroke-opacity=".8" stroke-width="1.2"><line x1="691" y1="99" x2="700" y2="99"/><line x1="718" y1="99" x2="727" y2="99"/><line x1="709" y1="81" x2="709" y2="90"/><line x1="709" y1="108" x2="709" y2="117"/></g>
+    <text x="782" y="126" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#F4F7FA">JUL 03 · 155</text>
+    <g stroke="#F4F7FA" stroke-opacity=".8" stroke-width="1.2"><line x1="691" y1="99" x2="700" y2="99"/><line x1="718" y1="99" x2="727" y2="99"/><line x1="709" y1="81" x2="709" y2="90"/><line x1="709" y1="108" x2="709" y2="117"/></g>
     <circle cx="709.1" cy="99.1" r="6" fill="none" stroke="#f5f3ff" stroke-opacity=".7" stroke-width="1.2"><animate attributeName="r" values="6;30" dur="4.6s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="4.6s" begin="1.5s" repeatCount="indefinite"/></circle>
-    <text x="735" y="87" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#e9d5ff">JUN 17 · 111</text>
-    <g stroke="#f5f3ff" stroke-opacity=".8" stroke-width="1.2"><line x1="735" y1="252" x2="744" y2="252"/><line x1="762" y1="252" x2="771" y2="252"/><line x1="753" y1="234" x2="753" y2="243"/><line x1="753" y1="261" x2="753" y2="270"/></g>
+    <text x="735" y="87" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#F4F7FA">JUN 17 · 111</text>
+    <g stroke="#F4F7FA" stroke-opacity=".8" stroke-width="1.2"><line x1="735" y1="252" x2="744" y2="252"/><line x1="762" y1="252" x2="771" y2="252"/><line x1="753" y1="234" x2="753" y2="243"/><line x1="753" y1="261" x2="753" y2="270"/></g>
     <circle cx="753.0" cy="251.7" r="6" fill="none" stroke="#f5f3ff" stroke-opacity=".7" stroke-width="1.2"><animate attributeName="r" values="6;30" dur="4.6s" begin="3.0s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="4.6s" begin="3.0s" repeatCount="indefinite"/></circle>
-    <text x="779" y="240" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#e9d5ff">JUL 02 · 106</text>
-    <text x="1109" y="76" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="1.4" fill="#c4b5fd">LONGEST RUN · 8 NIGHTS</text>
+    <text x="779" y="240" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing=".6" fill="#F4F7FA">JUL 02 · 106</text>
+    <text x="1109" y="76" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="1.4" fill="#F4F7FA">LONGEST RUN · 8 NIGHTS</text>
     <text x="70" y="52" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="15" font-weight="700" letter-spacing="2.6" fill="#eef4ff">COMMIT CONSTELLATION</text>
-    <text x="70" y="72" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="#7d95b5">1162 CONTRIBUTIONS · 63 ACTIVE NIGHTS · 15 STREAK RUNS · 366 DAYS</text>
+    <text x="70" y="72" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="#7d95b5">1163 CONTRIBUTIONS · 63 ACTIVE NIGHTS · 15 STREAK RUNS · 366 DAYS</text>
     <text x="600" y="424" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="1.3" fill="#5c7595">EACH STAR = ONE DAY I SHIPPED · SIZE = VOLUME</text>
   </g>
 </svg>
