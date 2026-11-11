@@ -53,6 +53,16 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
   <a href="https://github.com/Mariajtik">
     <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/My-CodeSpace/assets/constellation.svg" alt="Constelação animada baseada nas contribuições GitHub da Maria" width="100%">
   </a>
+
+  <div align="center">
+  <img src="https://count.getloli.com/@:Mariajtik?theme=booru-twifanartsfw&padding=7&scale=1&align=top&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Mariajtik&label=Profile+Views&color=blue&base=0" alt="Profile views">
+</div>
+
+
 </div>
 
 > O SVG é gerado automaticamente todos os dias pelo workflow de constelações. Se quiseres gerar imediatamente, vai a Actions → Atualizar constelação de contribuições → Run workflow.
@@ -63,8 +73,7 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
   <img src="assets/about-me.svg" alt="Seção sobre mim" width="80%">
 </div>
 
-## ✨ Sobre mim
-
+## 
 Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiável e agradável de usar. Tenho especial interesse em sistemas resilientes, open source e engenharia com IA.
 
 ## 🧩 Projetos em destaque
