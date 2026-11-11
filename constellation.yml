@@ -1,0 +1,54 @@
+name: Atualizar constelação de contribuições
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch contribution calendar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p tools assets
+          FROM=$(date -u -d '1 year ago' +%Y-%m-%dT00:00:00Z)
+          TO=$(date -u +%Y-%m-%dT23:59:59Z)
+
+          gh api graphql \
+            -f query='query($login: String!, $from: DateTime!, $to: DateTime!) { user(login: $login) { contributionsCollection(from: $from, to: $to) { contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } } } } }' \
+            -F login=Mariajtik \
+            -F from="$FROM" \
+            -F to="$TO" \
+            --jq '.data.user.contributionsCollection.contributionCalendar' \
+            > tools/constellation-data.json
+
+          test -s tools/constellation-data.json
+
+      - name: Generate SVG
+        run: |
+          python gen_constellation.py
+          test -s assets/constellation.svg
+
+      - name: Commit SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/constellation.svg
+          git diff --cached --quiet || git commit -m "Atualiza constelação de contribuições"
+          git push
