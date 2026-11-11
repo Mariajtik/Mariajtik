@@ -36,6 +36,18 @@ import math
 _cx = sum(c[1] for c in CAP) / len(CAP); _cy = sum(c[2] for c in CAP) / len(CAP)
 _a0 = math.atan2(CAP[0][2] - _cy, -(CAP[0][1] - _cx))
 CAP.sort(key=lambda c: (math.atan2(c[2] - _cy, -(c[1] - _cx)) - _a0) % (2 * math.pi))
+BASE = len(CAP)          # as 16 estrelas reais, que formam o contorno
+TOTAL = 50               # <<< META: troque só este número (mínimo 16)
+_pos = lambda ra, dec: (430 + (21.04 - ra) * 312, 270 - (dec + 19.7) * 22)
+_rr = random.Random(5)
+_tent = 0
+while len(CAP) < TOTAL and _tent < 20000:
+    _tent += 1
+    ra, dec = _rr.uniform(20.0, 22.1), _rr.uniform(-26.0, -10.5)
+    x, y = _pos(ra, dec)
+    if y < 115 or any(math.hypot(x - _pos(c[1], c[2])[0], y - _pos(c[1], c[2])[1]) < 36 for c in CAP):
+        continue
+    CAP.append(("extra", ra, dec, _rr.choice([2.0, 2.2, 2.4, 2.6]), ""))
 N = len(CAP)
 lit = min(stars, N)
 meta = (fol // META + 1) * META
@@ -43,10 +55,10 @@ prog = (fol - (meta - META)) / META
 
 pts = [(round(430 + (21.04 - ra) * 312), round(270 - (dec + 19.7) * 22)) for _, ra, dec, _, _ in CAP]
 
-outline = "M" + " L".join(f"{x} {y}" for x, y in pts) + "Z"
-segs = [(i - 1, i) for i in range(1, lit)]
-if lit >= N:
-    segs.append((N - 1, 0))
+outline = "M" + " L".join(f"{x} {y}" for x, y in pts[:BASE]) + "Z"
+segs = [(i - 1, i) for i in range(1, min(lit, BASE))]
+if lit >= BASE:
+    segs.append((BASE - 1, 0))
 lines = "".join(
     f'<path class="ln" pathLength="1" d="M{pts[a][0]} {pts[a][1]} L{pts[b][0]} {pts[b][1]}" style="animation-delay:{k*.35:.2f}s"/>'
     for k, (a, b) in enumerate(segs))
