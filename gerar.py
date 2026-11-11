@@ -16,15 +16,26 @@ else:
 CAP = [
     ("Algedi", 20.30, -12.5, 3.4, "Algedi"),
     ("Dabih", 20.35, -14.8, 3.6, "Dabih"),
+    ("phi", 20.52, -19.0, 2.6, ""),
+    ("chi", 20.60, -22.2, 2.4, ""),
     ("psi", 20.77, -25.3, 3.0, ""),
     ("omega", 20.85, -26.9, 2.8, ""),
+    ("upsilon", 21.12, -25.0, 2.4, ""),
     ("zeta", 21.44, -22.4, 3.0, ""),
+    ("eta", 21.10, -19.9, 2.4, ""),
+    ("theta", 21.10, -17.2, 2.6, ""),
+    ("iota", 21.00, -16.5, 3.0, ""),
     ("epsilon", 21.62, -19.5, 2.8, ""),
     ("kappa", 21.78, -18.9, 2.6, ""),
     ("delta", 21.78, -16.1, 4.0, "Deneb Algedi"),
     ("gamma", 21.67, -16.7, 3.4, "Nashira"),
-    ("iota", 21.10, -16.8, 3.0, ""),
+    ("sigma", 21.45, -15.0, 2.4, ""),
 ]
+# ordena os pontos em volta do centro: a linha forma um contorno limpo, sem cruzamentos
+import math
+_cx = sum(c[1] for c in CAP) / len(CAP); _cy = sum(c[2] for c in CAP) / len(CAP)
+_a0 = math.atan2(CAP[0][2] - _cy, -(CAP[0][1] - _cx))
+CAP.sort(key=lambda c: (math.atan2(c[2] - _cy, -(c[1] - _cx)) - _a0) % (2 * math.pi))
 N = len(CAP)
 lit = min(stars, N)
 meta = (fol // META + 1) * META
@@ -51,7 +62,8 @@ for i in range(lit):
     x, y = pts[i]
     dots += star(x, y, CAP[i][3], i * .35)
     if CAP[i][4]:
-        labels += f'<text class="lb" x="{x+12}" y="{y-10}" style="animation-delay:{i*.35+.5:.2f}s">{CAP[i][4]}</text>'
+        dy = 22 if CAP[i][4] == "Nashira" else -10
+        labels += f'<text class="lb" x="{x+12}" y="{y+dy}" style="animation-delay:{i*.35+.5:.2f}s">{CAP[i][4]}</text>'
 
 ghosts = ""
 for i in range(lit, N):
