@@ -8,6 +8,7 @@ permissions:
 jobs:
   gerar:
     runs-on: ubuntu-latest
+    timeout-minutes: 3
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
