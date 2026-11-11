@@ -74,8 +74,8 @@ def build(cal: dict) -> str:
 
     for m in ticks:
         x = x_of(m.isoformat())
-        el.append(f'    <line x1="{x:.0f}" y1="{PY0 - 14}" x2="{x:.0f}" y2="{PY1 + 10}" stroke="#8fb3dd" stroke-opacity=".10"/>')
-        el.append(f'    <text x="{x:.0f}" y="{PY1 + 30}" text-anchor="middle" font-family="{MONO}" font-size="10" font-weight="600" letter-spacing="1.6" fill="#5c7595">{m.strftime("%b").upper()}</text>')
+        el.append(f'    <line x1="{x:.0f}" y1="{PY0 - 14}" x2="{x:.0f}" y2="{PY1 + 10}" stroke="#9FD3B0" stroke-opacity=".10"/>')
+        el.append(f'    <text x="{x:.0f}" y="{PY1 + 30}" text-anchor="middle" font-family="{MONO}" font-size="14" font-weight="600" letter-spacing="1.6" fill="#5c7595">{m.strftime("%b").upper()}</text>')
 
     for run in runs:
         if len(run) < 2:
