@@ -31,12 +31,12 @@
 ## 📊 Estatísticas do GitHub
 
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mariajtik&theme=dark&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=true&count_private=true"
-             width="50%" style="display:block; margin:0;" alt="GitHub Stats"/>
+             width="80%" style="display:block; margin:0;" alt="GitHub Stats"/>
 </a>
 <a href="https://github.com/Mariajtik">
 
    <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&theme=dark&langs_count=20&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=false&count_private=false&layout=compact"
-             width="50%" style="display:block; margin:0;" alt="Top Languages"/>
+             width="80%" style="display:block; margin:0;" alt="Top Languages"/>
 </a>
 
 <a href="https://github.com/Mariajtik">
@@ -79,7 +79,7 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
 
 </div>
 
-> O SVG é gerado automaticamente todos os dias pelo workflow de constelações. Se quiseres gerar imediatamente, vai a Actions → Atualizar constelação de contribuições → Run workflow.
+> I think we're all like little stars...  → We just need to help each other shine. → Did you like it? Star me, onegaaai.
 
 ---
 
