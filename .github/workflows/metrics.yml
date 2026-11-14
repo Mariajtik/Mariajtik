@@ -1,18 +1,18 @@
 name: GitHub Metrics
 
 on:
+  # Atualiza diariamente e também pode ser executado manualmente ou em pushes.
   schedule:
-    - cron: "0 */24 * * *"
-
+    - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches: ["My-CodeSpace"]
 
 jobs:
-  metrics:
+  github-metrics:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
-
     steps:
       - name: Generate Metrics
         uses: lowlighter/metrics@latest
@@ -21,11 +21,69 @@ jobs:
 
           user: Mariajtik
           filename: metrics.svg
-
-          base: header, repositories
-
+          template: classic
+          # header e repositories já estavam configurados; foram mantidos.
+          base: header, activity, community, repositories, metadata
           config_timezone: Africa/Luanda
 
+          # Paleta do perfil: azul-marinho, verde-menta, coral e branco suave.
+          extras_css: |
+            svg { color: #9FD3B0; }
+            h1, h2, h3 { color: #9FD3B0; }
+            .field svg { fill: #9FD3B0; }
+            .error { color: #FF6B5E; }
+            .error svg { fill: #FF6B5E; }
+            .warning { color: #E6EDF3; }
+            .warning svg { fill: #E6EDF3; }
+            .contrib-s { color: #FF6B5E; background-color: #FF6B5E26; border-color: #FF6B5E; }
+            .contrib-a { color: #E6EDF3; background-color: #E6EDF326; border-color: #E6EDF3; }
+            .contrib-b { color: #9FD3B0; background-color: #9FD3B026; border-color: #9FD3B0; }
+            .contrib-c { color: #78A98C; background-color: #78A98C26; border-color: #78A98C; }
+            .label { background-color: #9FD3B030; color: #9FD3B0; }
+            .gauge.high .color { color: #9FD3B0; }
+            .gauge.average .color { color: #E6EDF3; }
+            .gauge.low .color { color: #FF6B5E; }
+            .gauge.high svg { fill: #9FD3B0; }
+            .gauge.average svg { fill: #E6EDF3; }
+            .gauge.low svg { fill: #FF6B5E; }
+            .audit-high { fill: #9FD3B0; }
+            .audit-average { fill: #E6EDF3; }
+            .audit-low { fill: #FF6B5E; }
+            .field .value { color: #9FD3B0; }
+            .achievement .title { color: #9FD3B0; }
+            .footnote, .minor, .minify { color: #9AAAB8; }
+            a { color: #9FD3B0; }
+            .progress-bar .done { background-color: #9FD3B0; }
+            .progress-bar .doing { background-color: #FF6B5E; }
+            .progress-bar .todo { background-color: #26384A; }
+
+          # Plugins adicionados; linguagens e repositórios já estavam configurados.
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
+          plugin_code: yes
+          plugin_code_days: 3
+          plugin_code_lines: 12
+          plugin_code_load: 400
+          plugin_code_visibility: public
+          plugin_followup: yes
+          plugin_followup_archived: yes
+          plugin_followup_sections: repositories
+          plugin_gists: yes
+          plugin_introduction: yes
+          plugin_introduction_title: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+          # Configurações existentes mantidas.
           plugin_languages: yes
           plugin_languages_limit: 20
           plugin_languages_threshold: 0%
