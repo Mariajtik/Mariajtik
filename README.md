@@ -26,23 +26,10 @@
 
 ---
 
-<div align="center">
-
 ## 📊 Estatísticas do GitHub
 
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mariajtik&theme=dark&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=true&cou[...]
-             width="80%" style="display:block; margin:0;" alt="GitHub Stats"/>
-</a>
-<a href="https://github.com/Mariajtik">
-
-   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&theme=dark&langs_count=20&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&i[...]
-             width="80%" style="display:block; margin:0;" alt="Top Languages"/>
-</a>
-
-<a href="https://github.com/Mariajtik">
-  <img width="70%" src="https://streak-stats.demolab.com?user=Mariajtik&hide_border=true&background=0F1B2D&ring=9FD3B0&fire=FF6B5E&currStreakLabel=9FD3B0&sideLabels=E6EDF3&currStreakNum=E6EDF3&sid[...]
-</a>
-
+<div align="center">
+  <img src="metrics.svg" alt="Estatísticas, atividade e linguagens do meu GitHub" width="100%">
 </div>
 
 ---
@@ -55,31 +42,9 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
   <a href="https://github.com/Mariajtik">
     <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/My-CodeSpace/assets/constellation.svg" alt="Constelação animada baseada nas contribuições GitHub da Maria" width="100%">
   </a>
-
-  <div align="center">
-  <img src="https://count.getloli.com/@:Mariajtik?theme=booru-twifanartsfw&padding=7&scale=1&align=top&pixelated=1&darkmode=auto" alt="Profile views">
 </div>
 
-<div align="center">
-  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=gellbooru&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
-</div>
-
-<div align="center">
-  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=minecraft&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
-</div>
-
-<div align="center">
-  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=miku&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
-</div>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Mariajtik&label=Profile+Views&color=blue&base=1000000" alt="Profile views">
-</div>
-
-
-</div>
-
-> I think we're all like little stars...  → We just need to help each other shine. → Did you like it? Star me, onegaaai.
+> I think we're all like little stars... → We just need to help each other shine. → Did you like it? Star me, onegaaai.
 
 ---
 
@@ -87,7 +52,8 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
   <img src="assets/about-me.svg" alt="Seção sobre mim" width="80%">
 </div>
 
-## 
+## Sobre mim
+
 Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiável e agradável de usar. Tenho especial interesse em sistemas resilientes, open source e engenharia com IA. Também estou a crescer como game developer, explorando gameplay, design de sistemas e experiências interativas.
 
 ## 🧩 Projetos em destaque
@@ -100,17 +66,17 @@ Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiá
 | [Ethpool Simulator](https://github.com/Mariajtik/ethpool-simulator-) | Visualização de pools de transações Ethereum e análise MEV |
 
 <div align="center">
-
-<a href="https://github.com/Mariajtik?tab=followers"><img src="https://img.shields.io/badge/Seguir_no_GitHub-FF6B5E?style=for-the-badge&logo=github&logoColor=white" alt="Seguir no GitHub"></a>
+  <a href="https://github.com/Mariajtik?tab=followers">
+    <img src="https://img.shields.io/badge/Seguir_no_GitHub-FF6B5E?style=for-the-badge&logo=github&logoColor=white" alt="Seguir no GitHub">
+  </a>
+</div>
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/EimanTahir027/Mariajtik/output/pacman-contribution-graph.svg" alt="Pacman contribution animation" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg">
+    <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg" alt="Animação Pac-Man das contribuições">
   </picture>
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:9FD3B0,100:0F1B2D&height=110&section=footer" alt="Rodapé decorativo">
-
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:9FD3B0,100:0F1B2D&height=110&section=footer" alt="Rodapé decorativo" width="100%">
