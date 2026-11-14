@@ -75,11 +75,6 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
 </div>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg">
-    <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg" alt="Animação Pac-Man das contribuições">
-  </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph-dark.svg">
