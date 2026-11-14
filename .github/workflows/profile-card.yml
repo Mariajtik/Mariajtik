@@ -1,0 +1,42 @@
+name: Atualizar cartao de perfil
+
+on:
+  schedule:
+    - cron: "30 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cartao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_USER: ${{ github.repository_owner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar Pillow (reduz o avatar)
+        run: pip install pillow
+
+      - name: Gerar o cartao
+        run: python scripts/generate_profile_card.py
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-card.svg
+          if git diff --cached --quiet; then
+            echo "Sem mudancas."
+          else
+            git commit -m "atualiza cartao de perfil"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
