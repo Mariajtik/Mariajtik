@@ -1,7 +1,6 @@
 name: GitHub Metrics
 
 on:
-  # Atualiza diariamente e também pode ser executado manualmente ou em pushes.
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
@@ -17,12 +16,13 @@ jobs:
       - name: Generate Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Use a PAT stored as a repository secret; it needs the scopes required
+          # by Metrics, including read:org to read organization contributions.
+          token: ${{ secrets.METRICS_TOKEN }}
 
           user: Mariajtik
           filename: metrics.svg
           template: classic
-          # header e repositories já estavam configurados; foram mantidos.
           base: header, activity, community, repositories, metadata
           config_timezone: Africa/Luanda
 
@@ -57,7 +57,6 @@ jobs:
             .progress-bar .doing { background-color: #FF6B5E; }
             .progress-bar .todo { background-color: #26384A; }
 
-          # Plugins adicionados; linguagens e repositórios já estavam configurados.
           plugin_calendar: yes
           plugin_calendar_limit: 1
           plugin_code: yes
@@ -68,7 +67,6 @@ jobs:
           plugin_followup: yes
           plugin_followup_archived: yes
           plugin_followup_sections: repositories
-          plugin_gists: yes
           plugin_introduction: yes
           plugin_introduction_title: yes
           plugin_isocalendar: yes
@@ -77,13 +75,15 @@ jobs:
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
+          # Pulls notable contributions from organization-owned repositories;
+          # no organization handle/name is specified in this workflow.
           plugin_notable: yes
           plugin_notable_from: organization
           plugin_notable_types: commit
           plugin_stars: yes
           plugin_stars_limit: 4
 
-          # Configurações existentes mantidas.
+          # Existing language and featured repository configuration.
           plugin_languages: yes
           plugin_languages_limit: 20
           plugin_languages_threshold: 0%
