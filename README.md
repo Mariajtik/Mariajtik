@@ -77,6 +77,13 @@ Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiá
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg">
     <img src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/pacman-contribution-graph.svg" alt="Animação Pac-Man das contribuições">
   </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph.svg">
+  <img alt="Galaga contribution graph" src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph.svg">
+</picture>
+
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:9FD3B0,100:0F1B2D&height=110&section=footer" alt="Rodapé decorativo" width="100%">
