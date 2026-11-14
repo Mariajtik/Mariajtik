@@ -52,9 +52,12 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
   <img src="assets/about-me.svg" alt="Seção sobre mim" width="80%">
 </div>
 
-## Sobre mim
+## Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiável e agradável de usar. Tenho especial interesse em sistemas resilientes, open source e engenharia com IA. Também estou a crescer como game developer, explorando gameplay, design de sistemas e experiências interativas.
+<div align="center">
+  <img src="assets/profile-card.svg" alt="Maria Baptista - GitHub profile card" width="100%">
+</div>
 
-Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiável e agradável de usar. Tenho especial interesse em sistemas resilientes, open source e engenharia com IA. Também estou a crescer como game developer, explorando gameplay, design de sistemas e experiências interativas.
+
 
 ## 🧩 Projetos em destaque
 
