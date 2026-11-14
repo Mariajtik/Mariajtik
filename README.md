@@ -6,7 +6,7 @@
 
 # Olá, sou a Maria 👋
 
-### Full Stack Engineer · Sistemas resilientes · Open source · IA
+### Full Stack Engineer • Aspiring Game Developer
 
 <p>
   <a href="https://komarev.com/ghpvc/?username=Mariajtik&style=for-the-badge&color=9FD3B0&label=VISUALIZA%C3%87%C3%95ES+DO+PERFIL">
@@ -30,17 +30,17 @@
 
 ## 📊 Estatísticas do GitHub
 
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mariajtik&theme=dark&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=true&count_private=true"
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mariajtik&theme=dark&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=true&cou[...]
              width="80%" style="display:block; margin:0;" alt="GitHub Stats"/>
 </a>
 <a href="https://github.com/Mariajtik">
 
-   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&theme=dark&langs_count=20&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&include_all_commits=false&count_private=false&layout=compact"
+   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mariajtik&theme=dark&langs_count=20&hide_border=false&bg_color=0F1B2D&title_color=9FD3B0&text_color=E6EDF3&i[...]
              width="80%" style="display:block; margin:0;" alt="Top Languages"/>
 </a>
 
 <a href="https://github.com/Mariajtik">
-  <img width="70%" src="https://streak-stats.demolab.com?user=Mariajtik&hide_border=true&background=0F1B2D&ring=9FD3B0&fire=FF6B5E&currStreakLabel=9FD3B0&sideLabels=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=9AA4B2" alt="Sequência de contribuições">
+  <img width="70%" src="https://streak-stats.demolab.com?user=Mariajtik&hide_border=true&background=0F1B2D&ring=9FD3B0&fire=FF6B5E&currStreakLabel=9FD3B0&sideLabels=E6EDF3&currStreakNum=E6EDF3&sid[...]
 </a>
 
 </div>
@@ -88,7 +88,7 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
 </div>
 
 ## 
-Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiável e agradável de usar. Tenho especial interesse em sistemas resilientes, open source e engenharia com IA.
+Sou Full Stack Engineer e gosto de transformar ideias em software prático, fiável e agradável de usar. Tenho especial interesse em sistemas resilientes, open source e engenharia com IA. Também estou a crescer como game developer, explorando gameplay, design de sistemas e experiências interativas.
 
 ## 🧩 Projetos em destaque
 
