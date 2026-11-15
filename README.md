@@ -29,7 +29,7 @@
 ## 📊 Estatísticas do GitHub
 
 <div align="center">
-  <img src="metrics.svg" alt="Estatísticas, atividade e linguagens do meu GitHub" width="100%">
+  <img src="assets/contributions-3d.svg" alt="Estatísticas, atividade e linguagens do meu GitHub" width="100%">
 </div>
 
 ---
