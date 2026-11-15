@@ -4,7 +4,7 @@
   <img src="ceu.svg" alt="Céu estrelado: cada estrela acende um ponto da constelação" width="100%">
 </a>
 
-# Olá, sou a Maria 👋
+# Olá, sou a Maria
 
 ### Full Stack Engineer • Aspiring Game Developer
 
@@ -26,7 +26,7 @@
 
 ---
 
-## 📊 Estatísticas do GitHub
+## Estatísticas do GitHub
 
 <div align="center">
   <img src="assets/contributions-3d.svg" alt="Estatísticas, atividade e linguagens do meu GitHub" width="100%">
@@ -34,7 +34,7 @@
 
 ---
 
-## 🌌 A minha constelação de contribuições
+## A minha constelação de contribuições
 
 Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o volume de contribuições, e as linhas ligam dias consecutivos.
 
@@ -79,7 +79,7 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
 
 
 
-## 🧩 Projetos em destaque
+## Projetos em destaque
 
 | Projeto | Em poucas palavras |
 |:--|:--|
