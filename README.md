@@ -57,6 +57,26 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
   <img src="assets/profile-card.svg" alt="Maria Baptista - GitHub profile card" width="100%">
 </div>
 
+<div align="center">
+  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=miku&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=gelbooru&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=minecraft&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://count.getloli.com/@Mariajtik-perfil-2026?name=Mariajtik-perfil-2026&theme=booru&padding=4&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
+<div align="center">
+  <img src="https://count.getloli.com/@:Mariajtik?theme=booru-twifanartsfw&padding=7&scale=1&align=top&pixelated=1&darkmode=auto" alt="Profile views">
+</div>
+
 
 
 ## 🧩 Projetos em destaque
@@ -77,8 +97,8 @@ Cada estrela representa um dia de atividade real no GitHub. O tamanho indica o v
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph.svg">
+  <source media="(prefers-color-scheme: blue)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: blue)" srcset="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph.svg">
   <img alt="Galaga contribution graph" src="https://raw.githubusercontent.com/Mariajtik/Mariajtik/output/galaga-contribution-graph.svg">
 </picture>
 
