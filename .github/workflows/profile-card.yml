@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
+      # PROFILE_TOKEN = token pessoal (le repos privados). Sem ele, so dados publicos.
+      PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_USER: ${{ github.repository_owner }}
     steps:
@@ -25,18 +27,18 @@ jobs:
       - name: Instalar Pillow (reduz o avatar)
         run: pip install pillow
 
-      - name: Gerar o cartao
+      - name: Gerar o cartao e o grafico 3D
         run: python scripts/generate_profile_card.py
 
       - name: Guardar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-card.svg
+          git add assets/profile-card.svg assets/contributions-3d.svg
           if git diff --cached --quiet; then
             echo "Sem mudancas."
           else
-            git commit -m "atualiza cartao de perfil"
+            git commit -m "atualiza cartao e grafico 3D"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           fi
