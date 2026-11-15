@@ -25,7 +25,7 @@ jobs:
           github_user_name: "Mariajtik"
 
       - name: Publish pacman graph to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
