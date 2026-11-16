@@ -4,9 +4,9 @@
   <img src="ceu.svg" alt="Céu estrelado: cada estrela acende um ponto da constelação" width="100%">
 </a>
 
-# Olá, sou a Maria
+# Greetings, sou a Maria or The Queen Ghost, if you prefer —
 
-### Full Stack Engineer • Aspiring Game Developer
+###  :shipit: Full Stack Engineer • Aspiring Game Developer :shipit:
 
 <p>
   <a href="https://komarev.com/ghpvc/?username=Mariajtik&style=for-the-badge&color=9FD3B0&label=VISUALIZA%C3%87%C3%95ES+DO+PERFIL">
